@@ -1,10 +1,14 @@
-body{margin: 0em;}
+body{margin: 0em;
+    background-color: white;
+    font-family: Verdana;}
 
 .menu1{display: flex;
     border-top: 5px solid #ff0000;
     padding: 0px;
     background-color:white;
-    width: 100%;}
+    width: 100%;}        
+    
+.menu1 li:hover{color:blue;}         /*  por cor azul quando o cursor esta em cima *ajeitar* */
 
 nav{height: 5em;
     align-items:baseline;}
@@ -27,7 +31,45 @@ nav{height: 5em;
     height: 10%;}
 
 .imagem_fundo{background-image: url("img/Fundo.jpg");
-    width: 2000px;
+    width: 1800px;
     height: 380px;
     position: static;
     background-repeat: no-repeat;}
+
+.imagem_fundo h1{color: white;
+    font-size: 30px;
+    padding-left: 500px;
+    padding-top: 100px;}
+
+.comprar{padding-left: 500px}
+
+.compras{padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 60em;
+    width: 36em;
+    background-color: white;
+    border-top-left-radius: 0.5em;}         /*por a cena de quando clicas ficar branco e quando nao, ficar zinza. cor da letra =*/
+
+.arrendar{padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 60em;
+    width: 36em;
+    background-color: white;
+    border-top-right-radius: 0.5em;}        /*por a cena de quando clicas ficar branco e quando nao, ficar zinza. cor da letra =*/
+
+#pesquisa{display: flex;}
+
+#search{background-color: white;
+        border: none;
+        height: 4.65em;
+        width: 50em;}
+    
+::placeholder{font-size: 1.5em}
+
+#searchimg{height: 4em;
+    width: 4em;}
+    
