@@ -1,7 +1,21 @@
 .menu1{display: flex;
-    border: 5px solid #ff0000;
+    border-top: 5px solid #ff0000;
     padding: 0px;
-    background-color:white;}
+    background-color:white;
+    width: 100%;}
 
-img{width: 8%;
-    height: 8%;}
+.imagem_logo{width: 8%;
+    height: 8%;
+    padding-top: 1em;}
+
+.parte2{display: flex;
+    width: 2000px;
+    padding-right: 0%;}
+
+.parte2 li{padding-left: 10px;}
+
+.menu1.parte1{padding-right: 100px;
+    padding-left: 10px;}
+
+.imagem_login{width: 25%;
+    height: 10%;}
