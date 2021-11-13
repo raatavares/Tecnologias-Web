@@ -1,8 +1,13 @@
+body{margin: 0em;}
+
 .menu1{display: flex;
     border-top: 5px solid #ff0000;
     padding: 0px;
     background-color:white;
     width: 100%;}
+
+nav{height: 5em;
+    align-items:baseline;}
 
 .imagem_logo{width: 8%;
     height: 8%;
@@ -10,7 +15,8 @@
 
 .parte2{display: flex;
     width: 2000px;
-    padding-right: 0%;}
+    padding-right: 0%;
+    list-style-type:none;}
 
 .parte2 li{padding-left: 10px;}
 
@@ -19,3 +25,9 @@
 
 .imagem_login{width: 25%;
     height: 10%;}
+
+.imagem_fundo{background-image: url("img/Fundo.jpg");
+    width: 2000px;
+    height: 380px;
+    position: static;
+    background-repeat: no-repeat;}
