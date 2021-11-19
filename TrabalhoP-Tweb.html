@@ -24,7 +24,7 @@
                 <li>RE/MAX Collection</li>
                 <li>Comprar</li>
                 <li>Vender</li>
-                <div>
+                <div class="agencias">
                     <li><select name="Agencia">
                         <option value="1"> Procurar um Agente ou Agência </option>
                         <option value="2"> Seja um Agente RE/MAX </option>
@@ -32,15 +32,19 @@
                         <option value="4"> Top Agentes e Agências </option>
                     </select></li>
                 </div>
-                <li><img class="imagem_login" src="img/login.jpg"/> Entrar </li>
+                <div class="opcao_entrar">
+                    <img class="imagem_login" src="img/agent.png"/> 
+                    <li>Entrar </li>
+                </div>
             </ul>
         </div>
     </nav>
     <div class="imagem_fundo" >
     <h1>Isto nunca foi tão simples!</h1>
         <div class="comprar">
-			<a class="compras">Cromprar</a>	
-            <a class="arrendar">Arrendar</a> <br>
+            <div class="comprar_arrendar">
+			    <a class="compras">Comprar</a>	
+                <a class="arrendar">Arrendar</a> <br></div>
             <div id="pesquisa">
                 <input type="text" name="search" id="search" placeholder="Onde? (Concelho ou Freguesia ou Zona ou Morada)" />
                 <img src="img/search.jpg" id="searchimg" />
