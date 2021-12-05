@@ -74,20 +74,27 @@ nav{height: 5em;
     height: 24px;}
 
 .imagem_fundo{background-image: url("img/Fundo.jpg");
-    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: auto;
     height: 380px;
-    position: static;
     background-repeat: no-repeat;}
 
 .imagem_fundo h1{color: white;
     font-size: 30px;
-    padding-left: 500px;
-    padding-top: 100px;}
+    padding-left: 20%;
+    padding-top: 9%;
+    max-width: 60%;
+    position: relative;
+    margin: auto;}
 
 .comprar_arrendar{display: flex;
     padding-right: 0%;}
 
-.comprar{padding-left: 500px;}
+.comprar{padding-left: 20%;
+    max-width: 60%;
+    position: relative;
+    margin: auto;}
 
 .compras{padding-top: 10px;
     padding-bottom: 10px;
@@ -119,5 +126,51 @@ nav{height: 5em;
 
 #searchimg{height: 4em;
     width: 4em;
-    cursor: pointer;}
+    cursor: pointer;
+    background-color: white;}
+
+#procura_img{
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    border-radius: 12px;
+    cursor: pointer;                    /*Ajeitar o border radius*/
+}
+
+#comprar_vender_img{
+    max-width: 1200px;
+    border-radius: 12px;
+    cursor: pointer;
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;                  /*Ajeitar o border radius*/
+}
+
+.face{height: 32px;
+    width: 32px;
+}
+
+.insta{height: 32px;
+    width: 32px;
+}
+
+.linkedin{
+    height: 32px;
+    width: 32px;
+}
+
+.youtube{
+    height: 32px;
+    width: 32px;
+}
+
+.footer_menu li{
+    text-decoration: none;
+}
     
