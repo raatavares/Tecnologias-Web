@@ -170,7 +170,39 @@ nav{height: 5em;
     width: 32px;
 }
 
-.footer_menu li{
-    text-decoration: none;
+#footer{margin-top: 48px;
+    border-top: lightgray solid 1px;
+    border-bottom: #003aa8 solid 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2%;  
+    padding-top: 2%;
+    }
+
+.imagem_logo2{max-height: 40px;
+    cursor:default;
+    margin-bottom: 5%;}
+
+.footer_menu ul{
+    list-style-type: none;
+}
+
+.column {color: black;
+    float: left;
+    width: 25%;
+    cursor: pointer;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
     
+.fim a{display:block;
+    font-size: 13px;}
+
+.fim_direita{float: right;
+    cursor: pointer;}
+
+.fim_esquerda{float: left;}
