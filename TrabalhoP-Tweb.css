@@ -246,6 +246,91 @@ Imagens Azuis
 
 
 
+
+
+
+
+
+/*******************
+Agentes & Agências
+*******************/
+.agentes_agencias{
+    margin-left: 12%;
+    margin-right: 12%;
+    max-width: 76%;
+    padding-top: 64px;
+    margin-bottom: 32px;
+}
+
+    .agen_subtitle{
+        color: #4c555f;
+        font-weight: bold;
+    }
+
+    .agen_cima{
+        display: inline-flex;
+        position: relative;
+        margin-bottom: 32px;
+    }
+
+        .agen_cima h2{
+            width: 50%;
+            color: black;
+        }
+
+        .agen_cima p{
+            width: 50%;
+        }
+
+    .agen_baixo{
+        background-image: url("img/fundo2.jpg");
+        height:320px;
+        background-repeat: no-repeat;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+        .button_agen{
+            float: right;
+            margin-top: 240px;
+            margin-right: 25px;
+            display: inline-flex;
+        }
+
+            .button_agente{
+                padding-top: 13px;
+                padding-bottom: 13px;
+                padding-right: 21px;
+                padding-left: 21px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 4px;
+                background-color: rgb(35, 35, 199);
+                cursor: pointer;
+                border-color: rgb(35, 35, 199);
+                color: white;
+                font-weight: bold;
+            }
+
+                .button_agente:hover{
+                    background-color: #003aa8;
+                }
+
+            .button_agencia{
+                padding-top: 13px;
+                padding-bottom: 13px;
+                padding-right: 21px;
+                padding-left: 21px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 4px;
+                font-weight: bold;
+                background-color: #fff;
+                cursor: pointer;
+                border-color: #fff;
+                color: #4c555f;
+            }
+
 /**********************
 Empreendimentos
 **********************/
@@ -303,9 +388,6 @@ Empreendimentos
         .button_empre:hover{
             background-color: #003aa8;
         }
-
-
-
 
 /**********************
 Pesquisas mais comuns
