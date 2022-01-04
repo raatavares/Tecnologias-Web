@@ -460,6 +460,7 @@ Agentes & Agências
         background-image: url("img/fundo2.jpg");
         height:320px;
         background-repeat: no-repeat;
+        background-size: cover;
         border-bottom-right-radius: 20px;
         border-top-left-radius: 20px;
     }
@@ -467,7 +468,7 @@ Agentes & Agências
         .button_agen{
             float: right;
             margin-top: 240px;
-            margin-right: 25px;
+            margin-right: 10%;
             display: inline-flex;
         }
 
