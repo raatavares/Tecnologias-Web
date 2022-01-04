@@ -115,9 +115,8 @@ Barra de pesquisa com imagem de fundo
 **************************************/
 .imagem_fundo{
     background-image: url("img/Fundo.jpg");
-    max-width: 100%;
+    width: 100%;
     position: relative;
-    margin: auto;
     height: 380px;
     background-repeat: no-repeat;
 }
@@ -125,60 +124,59 @@ Barra de pesquisa com imagem de fundo
     .imagem_fundo h1{
         color: white;
         font-size: 24px;
-        padding-left: 20%;
-        padding-top: 9%;
-        max-width: 60%;
-        position: relative;
-        margin: auto;
-        filter: spacing -.88px;
+        padding-top: 6%;
+        margin-left: 17%;
+        margin-bottom: 3%;
     }
-        .comprar{
-            padding-left: 20%;
-            max-width: 60%;
-            position: relative;
-            margin: auto;
+
+    .comprar{
+        margin-left: 17%;
+        margin-right: 17%;
+        position: relative;
+    }
+      
+        .comprar a:active{
+            background-color: white;
+            animation-iteration-count:infinite;
         }
-        
-            .comprar a:active{
+
+       .comprar_arrendar{
+            display: flex;
+            padding-right: 0%;
+        }
+
+            .compras{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
                 background-color: white;
-                animation-iteration-count:infinite;
-            }
+                border-top-left-radius: 0.5em;
+                cursor: pointer;
+            }         /*por a cena de quando clicas ficar branco e quando nao, ficar zinza. cor da letra =*/
 
-            .comprar_arrendar{
-                display: flex;
-                padding-right: 0%;
-            }
-
-                .compras{
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    padding-right: 15px;
-                    padding-left: 15px;
-                    background-color: white;
-                    border-top-left-radius: 0.5em;
-                    cursor: pointer;
-                }         /*por a cena de quando clicas ficar branco e quando nao, ficar zinza. cor da letra =*/
-
-                .arrendar{
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    padding-right: 15px;
-                    padding-left: 15px;
-                    background-color: #eceff2;
-                    border-top-right-radius: 0.5em;
-                    cursor: pointer;
-                } 
+            .arrendar{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 15px;
+                padding-left: 15px;
+                background-color: #eceff2;
+                border-top-right-radius: 0.5em;
+                cursor: pointer;
+            } 
    
-            #pesquisa{display: flex;}
+        #pesquisa{
+            display: flex;
+        }
 
                 #search{
                     background-color: white;
-                        border: none;
-                        height: 4.65em;
-                        width: 50em;
+                    border: none;
+                    height: 60px;
+                    width: 100%;
+                    outline: none;
+                    font-size: medium;
                 }
-
-                ::placeholder{font-size: 1.5em}
 
 /*************
 Imagens Azuis
@@ -212,6 +210,7 @@ Imagens Azuis
 .menu2{display: flex;
     align-items: flex-end;
     justify-content: flex-end;}
+    
 .menu2 h2{color:black;
     font-size: 20px;
     max-width: 76%;
@@ -221,6 +220,7 @@ Imagens Azuis
     padding-right: 12%;
     padding-top: 3%;
     border-radius: 12px}
+
 .newsver{font-size: 15px;
     max-width: 76%;
     position: relative;
@@ -230,12 +230,12 @@ Imagens Azuis
     padding-right: 12%;
     padding-top: 1%;
     border-radius: 12px;
-    display: flex;
-margin-left:auto;}
+    display: flex;}
 
 .menu3{display: flex;
     align-items: flex-end;
     justify-content: flex-end;}
+
 .menu3 h2{color:black;
     font-size: 20px;
     max-width: 76%;
@@ -245,6 +245,7 @@ margin-left:auto;}
     padding-right: 12%;
     padding-top: 3%;
     border-radius: 12px}
+
 .remaxc{font-size: 15px;
     max-width: 76%;
     position: relative;
@@ -255,11 +256,13 @@ margin-left:auto;}
     padding-top: 1%;
     border-radius: 12px;
     display: flex;
-margin-left:auto;}
+    margin-left:auto;}
 
+    
 .menu4{display: flex;
     align-items: flex-end;
     justify-content: flex-end;}
+
 .menu4 h2{color:black;
     font-size: 20px;
     max-width: 76%;
@@ -269,6 +272,7 @@ margin-left:auto;}
     padding-right: 12%;
     padding-top: 3%;
     border-radius: 12px}
+
 .emp{font-size: 15px;
     max-width: 76%;
     position: relative;
@@ -279,15 +283,147 @@ margin-left:auto;}
     padding-top: 1%;
     border-radius: 12px;
     display: flex;
-margin-left:auto;}
+    margin-left:auto;}
 
 
 
 
 
 
+/*************************
+Concelhos mais procurados
+*************************/
+.mais_procurados{
+    margin-left: 12%;
+    margin-right: 12%;
+    max-width: 76%;
+    padding-top: 64px;
+    margin-bottom: 32px;
+}
 
+    .procurados_title{
+        color: black;
+    }
 
+    .tabela_procurados{
+        width: 100%;
+        border-spacing:8px 8px;
+    }
+
+        .lisboa{
+            padding: 8px;
+            width: 33.3333%;
+            height: 100px;
+            background-image: url("img/lisboa.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+
+            .lisboa h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+            }
+
+        .porto{
+            padding: 8px;
+            width: 33.3333%;
+            height: 100px;
+            background-image: url("img/porto.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+        }
+    
+            .porto h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+            }
+
+        .coimbra{
+            padding: 8px;
+            width: 33.3333%;
+            height: 100px;
+            background-image: url("img/coimbra.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;   
+            background-size: cover;
+            cursor: pointer;
+        }
+        
+            .coimbra h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+            }
+    
+        .braga{
+            padding: 8px;
+            width: 33.3333%;
+            height: 100px;
+            background-image: url("img/braga.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;   
+            background-size: cover;
+            cursor: pointer;
+        }
+            
+            .braga h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+            }
+
+        .faro{
+            padding: 8px;
+            width: 33.3333%;
+            height: 100px;
+            background-image: url("img/faro.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;  
+            background-size: cover;
+            cursor: pointer;
+        }
+           
+            .faro h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+            }
+
+        .leiria{
+            padding: 8px;
+            width: 33.3333%;
+            height: 100px;
+            background-image: url("img/leiria.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;   
+            background-size: cover; 
+            cursor: pointer;
+        }
+           
+            .leiria h3{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                color: white;
+            }
+        
 
 /*******************
 Agentes & Agências
