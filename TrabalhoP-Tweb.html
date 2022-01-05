@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrabalhoPratico-Tweb</title>
+    
 </head>
 <body> 
     <nav>
@@ -179,13 +180,145 @@
 
     <div class="Pesquisas_mais_comuns">
         <h2>Pesquisas mais comuns</h2>
-        <div classe="dropdown3">
-            <span>Apartamento</span>
-            <div classe="dropdown3-content"></div>
-            <p>Lisboa</p>
-            <p>Sintra</p>
-            <p>Cascais</p>
-            <p>Oeiras</p>
+        <div class="dropdown3-1">
+            <button onclick="FApartamento()" class="menu-apartamento">Apartamento <i class='fa fa-angle-down'></i></button>
+            <div id="menu-apartamento1" class="dropdown-apartamento">
+                <a href="#">Lisboa</a>
+                <a href="#">Sintra</a>
+                <a href="#">Cascais</a>
+                <a href="#">Oeiras</a>
+                <a href="#">Porto</a>
+                <a href="#">Amadora</a>
+                <a href="#">Vila Nova de Gaia</a>
+                <a href="#">Almada</a>
+                <a href="#">Loures</a>
+                <a href="#">Vila Franca de Xira</a>
+                <a href="#">Seixal</a>
+                <a href="#">Odivelas</a>
+                <a href="#">Braga</a>
+                <a href="#">Portimão</a>
+                <a href="#">Matosinhos</a>
+                <a href="#">Setúbal</a>
+                <a href="#">Albufeira</a>
+                <a href="#">Maia</a>
+                <a href="#">Loulé</a>
+                <a href="#">Gondomar</a>
+                <a href="#">Coimbra</a>
+                <a href="#">Mafra</a>
+                <a href="#">Leiria</a>
+                <a href="#">Barreiro</a>
+                <a href="#">Funchal</a>
+                <a href="#">Alenquer</a>
+                <a href="#">Vila Nova de Famalicão</a>
+                <a href="#">Faro</a>
+                <a href="#">Silves</a>
+                <a href="#">Montijo</a>
+            </div>
+        </div>
+        <div class="dropdown3-2">
+            <button onclick="FLoja()" class="menu-loja">Loja <i class='fa fa-angle-down'></i></button>
+            <div id="menu-loja1" class="dropdown-loja">
+                <a href="#">Lisboa</a>
+                <a href="#">Sintra</a>
+                <a href="#">Porto</a>
+                <a href="#">Amadora</a>
+                <a href="#">Oeiras</a>
+                <a href="#">Loures</a>
+                <a href="#">Odivelas</a>
+                <a href="#">Almada</a>
+                <a href="#">Cascais</a>
+                <a href="#">Braga</a>
+                <a href="#">Seixal</a>
+                <a href="#">Matosinhos</a>
+                <a href="#">Vila Nova de Famalicão</a>
+                <a href="#">Vila Franca de Xira</a>
+                <a href="#">Setúbal</a>
+                <a href="#">Vila Nova de Gaia</a>
+                <a href="#">Guimarães</a>
+                <a href="#">Portimão</a>
+                <a href="#">Leiria</a>
+                <a href="#">Faro</a>
+                <a href="#">Gondomar</a>
+                <a href="#">Albufeira</a>
+                <a href="#">Maia</a>
+                <a href="#">Viseu</a>
+                <a href="#">Coimbra</a>
+                <a href="#">Loulé</a>
+                <a href="#">Felgueiras</a>
+                <a href="#">Funchal</a>
+                <a href="#">Mafra</a>
+                <a href="#">Barreiro</a>
+            </div>
+        </div>
+        <div class="dropdown3-3">
+            <button onclick="FMoradia()" class="menu-moradia">Moradia <i class='fa fa-angle-down'></i></button>
+            <div id="menu-moradia1" class="dropdown-moradia">
+                <a href="#">Cascais</a>
+                <a href="#">Sintra</a>
+                <a href="#">Almada</a>
+                <a href="#">Vila Nova de Gaia</a>
+                <a href="#">Mafra</a>
+                <a href="#">Seixal</a>
+                <a href="#">Torres Vedras</a>
+                <a href="#">Vila Nova de Famalicão</a>
+                <a href="#">Porto</a>
+                <a href="#">Guimarães</a>
+                <a href="#">Setúbal</a>
+                <a href="#">Lisboa</a>
+                <a href="#">Sesimbra</a>
+                <a href="#">Loulé</a>
+                <a href="#">Oeiras</a>
+                <a href="#">Braga</a>
+                <a href="#">Albufeira</a>
+                <a href="#">Alenquer</a>
+                <a href="#">Évora</a>
+                <a href="#">Palmela</a>
+                <a href="#">Matosinhos</a>
+                <a href="#">Leiria</a>
+                <a href="#">Gondomar</a>
+                <a href="#">Loures</a>
+                <a href="#">Alcobaça</a>
+                <a href="#">Maia</a>
+                <a href="#">Silves</a>
+                <a href="#">Santarém</a>
+                <a href="#">Vila Franca de Xira</a>
+                <a href="#">Coimbra</a>
+            </div>
+        </div>
+        <div class="dropdown3-4">
+            <button onclick="FTerreno()" class="menu-terreno">Terreno <i class='fa fa-angle-down'></i></button>
+            <div id="menu-terreno1" class="dropdown-terreno">
+                <a href="#">Sintra</a>
+                <a href="#">Vila Nova de Gaia</a>
+                <a href="#">Palmela</a>
+                <a href="#">Cascais</a>
+                <a href="#">Almada</a>
+                <a href="#">Mafra</a>
+                <a href="#">Vila Nova de Famalicão</a>
+                <a href="#">Sesimbra</a>
+                <a href="#">Braga</a>
+                <a href="#">Loures</a>
+                <a href="#">Torres Vedras</a>
+                <a href="#">Setúbal</a>
+                <a href="#">Seixal</a>
+                <a href="#">Loulé</a>
+                <a href="#">Benavente</a>
+                <a href="#">Gondomar</a>
+                <a href="#">Coimbra</a>
+                <a href="#">Vila Franca de Xira</a>
+                <a href="#">Guimarães</a>
+                <a href="#">Leiria</a>
+                <a href="#">Odivelas</a>
+                <a href="#">Silves</a>
+                <a href="#">Maia</a>
+                <a href="#">Santa Maria da Feira</a>
+                <a href="#">Penafiel</a>
+                <a href="#">Alenquer</a>
+                <a href="#">Lousada</a>
+                <a href="#">Viseu</a>
+                <a href="#">Marco de Canaveses</a>
+                <a href="#">Lourinhã</a>
+            </div>
         </div>
     </div>
 
@@ -238,6 +371,14 @@
         </div>
     </div>
 
-
+    <script type="text/javascript">
+        function FApartamento(){
+            if(document.getElementsByClassName('menu-apartamento').checked)
+                document.getElementById('menu-apartamento1').show();
+            else
+                document.getElementById('menu-apartamento1').hide();
+        }
+      
+    </script>
 </body>
 </html>

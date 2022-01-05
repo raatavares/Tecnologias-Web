@@ -576,6 +576,66 @@ Pesquisas mais comuns
     font-size: 15px;
 }
 
+    .menu-apartamento{
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 12px;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        border-style: none;
+    }
+
+    .menu-loja{
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 12px;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        border-style: none;
+    }
+
+    .menu-moradia{
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 12px;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        border-style: none;
+    }
+
+    .menu-terreno{
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 12px;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        border-style: none;
+    }
+
 
 
 /********
@@ -642,3 +702,7 @@ Pesquisas mais comuns
         }
 
         .fim_esquerda{float: left;}      
+
+
+          
+    
