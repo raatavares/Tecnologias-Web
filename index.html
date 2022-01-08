@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrabalhoPratico-Tweb</title>
     
+    
 </head>
 <body> 
 
@@ -432,6 +433,69 @@
         </div>
     </div>
 
+
+
+    <div class="financiamento">
+        <button onclick="FunctionFinanciamento()" id="btnfinanciamento" class="dropbtn3"><i1 class='fa fa-angle-down' style="float: left; font-size: 30px;"></i1>Calcular Financiamento<i2 class='fa fa-angle-down' style="float: right; font-size: 30px;"></i2></button>
+        <div id="FinDropdown" class="dropdown-content4">
+            <form>
+            <fieldset>
+                <legend><p>Financiamento</p></legend>
+                <div class="row">   
+                    <div class="column" id="column-fin">
+                        <i class="fa fa-home" style="font-size:48px;"></i>
+                        <p>Custo</p>
+                        <input type="number" name="amountInput1" min="0" max="1111111" value="0" oninput="this.form.amountRange1.value=this.value" /><br>
+                        <input type="range" name="amountRange1" min="0" max="1111111" value="0" step="1" oninput="this.form.amountInput1.value=this.value"/>
+                    </div>
+                    <div class="column" id="column-fin">
+                        <i class="fa fa-money" style="font-size:48px;"></i>
+                        <p>Entrada Inicial</p>
+                        <input type="number" name="amountInput2" min="0" max="1000000" value="0" oninput="this.form.amountRange2.value=this.value" /><br>
+                        <input type="range" name="amountRange2" min="0" max="1000000" value="0" step="1" oninput="this.form.amountInput2.value=this.value"/>
+                    </div>
+                    <div class="column" id="column-fin">
+                        <i class="fa fa-money" style="font-size:48px;"></i>
+                        <p>Valor de Empréstimo</p>
+                        <input type="number" name="amountInput3" min="0" max="1000000" value="0" oninput="this.form.amountRange3.value=this.value" /><br>
+                        <input type="range" name="amountRange3" min="0" max="1000000" value="0" step="1" oninput="this.form.amountInput3.value=this.value"/>
+                    </div>
+                    <div class="column" id="column-fin">
+                        <i class="fa fa-calendar" style="font-size:48px;"></i>
+                        <p>Duração (anos)</p>
+                        <input type="number" name="amountInput4" min="0" max="50" value="0" oninput="this.form.amountRange4.value=this.value" /><br>
+                        <input type="range" name="amountRange4" min="0" max="50" value="0" step="1" oninput="this.form.amountInput4.value=this.value"/>
+                    </div> 
+                </div> 
+            </fieldset>
+            </form>
+            <div class="CalBtn">
+                <button type="button" onclick="FunctionCalcFinanciamento()" class="submeter">Financiamento</button>
+            </div>
+            <div class="ResultadoFin" id="ResultadoFin">
+                <table>
+                <tr class="column" id="column-fin1">
+                    <img src="img/banco_CA.jpg" class="img_ca"/>
+                    <p>Crédito Agrícula Crédito habitação Taxa variável</p>
+                    <span>variável</span>
+                    <br>
+                </tr>
+                <tr class="column" id="column-fin1">
+                    <img src="img/banco_milennium.png" class="img_mill"/>
+                    <p>Millennium Crédito habitação Taxa variável</p>
+                    <span>variável</span>
+                    <br>
+                </tr>
+                <tr class="column" id="column-fin1">
+                    <img src="img/banco_CGD.png" class="img_cgd"/>
+                    <p>Caixa Geral de Depósito Crédito habitação Taxa variável</p>
+                    <span>variável</span>
+                    <br>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
 
     <div id="footer">
         <div class="row">

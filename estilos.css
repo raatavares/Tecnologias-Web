@@ -838,10 +838,6 @@ Calculo do Preço do Imóvel
             background-color: #f1f1f1;
         }
 
-    .show {
-        display: contents;
-    }
-
     .zona1-content{
         display: none;
     }
@@ -855,6 +851,59 @@ Calculo do Preço do Imóvel
             display: block;
             margin-left: 5px;
         }
+
+
+/**************
+Financiamento
+**************/
+.financiamento{
+    color: black;
+    padding-left: 12%;
+    padding-right: 12%;
+    max-width: 76%;
+    padding-top: 64px;
+    padding-bottom: 48px;
+    font-size: 15px;
+}
+
+    #btnfinanciamento{
+        text-align: center;
+        background-color: #003aa8;
+        color: white;
+    }
+
+    #column-fin{
+        text-align: center;
+    }
+
+    .ResultadoFin{
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .show {
+        display: contents;
+    }
+
+    .img_ca{
+        height: 50px;
+        width: auto;
+        float: left;
+    }
+
+    .img_mill{
+        height: 50px;
+        width: auto;
+        float: left;
+    }
+
+    .img_cgd{
+        height: 50px;
+        width: auto;
+        float: left;
+    }
 
 /********
  Footer

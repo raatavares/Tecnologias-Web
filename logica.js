@@ -108,3 +108,11 @@ function FunctionLimpar(){
     document.getElementById("resultado").style.display = "none";
 }
 
+//Botões do Financiamento
+function FunctionFinanciamento() {
+  document.getElementById("FinDropdown").classList.toggle("show");
+}
+
+function FunctionCalcFinanciamento() {
+  document.getElementById("ResultadoFin").classList.toggle("show");
+}
