@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="TrabalhoP-Tweb.css"   rel="stylesheet">
+    <script type="text/javascript" src="logica.js"></script>
+    <link href="estilos.css"   rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,13 +11,13 @@
     
 </head>
 <body> 
-    <nav>
+
+    <nav class="nav-menu">
         <div class="menu1">
             <img class="imagem_logo" src="img/logo_remax.jpg"/>
             <ul class="parte1" style="list-style-type:none">
-                <br>
                 <div class="dropdown">
-                    <span>Portugues</span>
+                    <span>Portugues <i class='fa fa-angle-down'></i></span>
                     <div class="dropdown-content">
                     <p>Portugues</p>
                     <p>Ingles</p>
@@ -28,8 +29,9 @@
                 <li><a href="collection.html">RE/MAX Collection</a></li>
                 <li><a href="comprar.html">Comprar</a></li>
                 <li><a href="verder.html">Vender</a></li>
+            </ul>
                 <div class="dropdown2">
-                    <span>Agências</span>
+                    <span class="dropspan">Agências <i class='fa fa-angle-down'></i></span>
                     <div class="dropdown2-content">
                     <p>Procurar um Agente ou Agência</p>
                     <p>Seja uma Agente RE/MAX</p>
@@ -39,24 +41,25 @@
                   </div>
             
                 <div class="opcao_entrar">
-                    <i class="fa fa-user-circle-o" style="font-size:24px; padding-top:0.2em"></i>
-                    <li><a href="entrar.html">Entrar</a></li>
+                    <i class="fa fa-user-circle-o" style="font-size:24px; margin-top: 17px; margin-bottom: 16px; margin-right: 10px;"></i>
+                    <a href="entrar.html">Entrar</a>
                 </div>
-            </ul>
+            
         </div>
     </nav>
     <div class="imagem_fundo" >
-        <h1>Isto nunca foi tão simples!</h1>
+       <br><br><br><br><br> <span>Isto nunca foi tão simples!</span><br><br><br>
         <div class="comprar">
             <div class="comprar_arrendar">
-			    <a class="compras">Comprar</a>	
-                <a class="arrendar">Arrendar</a> <br>
+			    <a id="compras" onclick="myFunctionCompras()" class="compras">Comprar</a>	
+                <a id="arrendar" onclick="myFunctionArrendar()" class="arrendar">Arrendar</a> 
             </div>
             <div id="pesquisa">
                 <input type="text" name="search" id="search" placeholder=" Onde? (Concelho ou Freguesia ou Zona ou Morada)" />
                 <i class="fa fa-search" style="font-size:30px; padding-top:0.5em; padding-right:0.5em; background-color: white;"></i> 
-            </div>	                       
+            </div>	              
         </div>
+        <button onclick="topFunction()" id="TopBtn" class="btnvermais"> <i class="fa fa-arrow-down"></i> <span>Ver mais</span></button>  
     </div>
 
 
@@ -73,9 +76,9 @@
             </span>
             <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
         </div>
-      </div>
-       
-      <div class="novi">
+    </div>
+
+    <div class="novi">
         <table class="novis">
             <tr>
                 <th class="novis1" onclick="location.href='t3visa.html'">
@@ -201,9 +204,9 @@
 
     <div class="Pesquisas_mais_comuns">
         <h2>Pesquisas mais comuns</h2>
-        <div class="dropdown3-1">
-            <button onclick="FApartamento()" class="menu-apartamento">Apartamento <i class='fa fa-angle-down'></i></button>
-            <div id="menu-apartamento1" class="dropdown-apartamento">
+        <div class="dropdown3">
+            <button onclick="myFunction1()" id="dropbtn3-1" class="dropbtn3">Apartamentos <i class='fa fa-angle-down'></i></button>
+            <div id="myDropdown3-1" class="dropdown-content3">
                 <a href="#">Lisboa</a>
                 <a href="#">Sintra</a>
                 <a href="#">Cascais</a>
@@ -236,9 +239,9 @@
                 <a href="#">Montijo</a>
             </div>
         </div>
-        <div class="dropdown3-2">
-            <button onclick="FLoja()" class="menu-loja">Loja <i class='fa fa-angle-down'></i></button>
-            <div id="menu-loja1" class="dropdown-loja">
+        <div class="dropdown3">
+            <button onclick="myFunction2()" id="dropbtn3-2" class="dropbtn3">Loja <i class='fa fa-angle-down'></i></button>
+            <div id="myDropdown3-2" class="dropdown-content3">
                 <a href="#">Lisboa</a>
                 <a href="#">Sintra</a>
                 <a href="#">Porto</a>
@@ -271,9 +274,9 @@
                 <a href="#">Barreiro</a>
             </div>
         </div>
-        <div class="dropdown3-3">
-            <button onclick="FMoradia()" class="menu-moradia">Moradia <i class='fa fa-angle-down'></i></button>
-            <div id="menu-moradia1" class="dropdown-moradia">
+        <div class="dropdown3">
+            <button onclick="myFunction3()" id="dropbtn3-3" class="dropbtn3">Moradia <i class='fa fa-angle-down'></i></button>
+            <div id="myDropdown3-3" class="dropdown-content3">
                 <a href="#">Cascais</a>
                 <a href="#">Sintra</a>
                 <a href="#">Almada</a>
@@ -306,9 +309,9 @@
                 <a href="#">Coimbra</a>
             </div>
         </div>
-        <div class="dropdown3-4">
-            <button onclick="FTerreno()" class="menu-terreno">Terreno <i class='fa fa-angle-down'></i></button>
-            <div id="menu-terreno1" class="dropdown-terreno">
+        <div class="dropdown3">
+            <button onclick="myFunction4()" id="dropbtn3-4" class="dropbtn3">Terreno <i class='fa fa-angle-down'></i></button>
+            <div id="myDropdown3-4" class="dropdown-content3">
                 <a href="#">Sintra</a>
                 <a href="#">Vila Nova de Gaia</a>
                 <a href="#">Palmela</a>
@@ -343,12 +346,70 @@
         </div>
     </div>
 
-
-
-
-
-
-
+    <div class="calculo">
+        <button onclick="FunctionCalculo()" id="btncalculo" class="dropbtn3"><i1 class='fa fa-angle-down' style="float: left; font-size: 30px;"></i1>Calcular Preço de Imóvel<i2 class='fa fa-angle-down' style="float: right; font-size: 30px;"></i2></button>
+        <div id="CalcDropdown" class="dropdown-content4">
+            <form>
+            <fieldset>
+                <legend><p>Descrição do Imóvel</p></legend>
+                <div class="tipo">
+                    <p>Tipologia: <select name="tipologia" required>
+                        <option value="0">T0</option>
+                        <option value="1">T1</option>
+                        <option value="2">T2</option>
+                        <option value="3">T3</option>
+                        <option value="4">T4</option>
+                        <option value="5">T5</option>
+                </p></select> 
+                </div>
+                <div class="area">
+                    <p>Área útil (m<sup>2</sup>): <input type="number" name="area" id="area" min="1" max="999999" maxlength="6" required/></p>
+                </div>
+                <div class="idade">
+                    <p>Idade do Imóvel : <br><br> 
+                    <input type="radio" name="idade" value="min"/> Inferior a 6 anos</p>
+                    <p><input type="radio" name="idade" value="med"/> Entre 7 e 10 anos</p>
+                    <p><input type="radio" name="idade" value="max"/> Superior a 11 anos</p>
+                </div>
+                <div class="garagem">
+                    <p>Garagem  <input type="checkbox" id="garagem" name="garagem"/></p>
+                </div>
+                <div class="TPublicos">
+                    <p>Proximidade de Transportes Públicos <input type="checkbox" id="transportes" name="transportes"/></p>
+                </div>
+            </fieldset>
+            <div class="CalBtn">
+                <button type="button" onclick="FunctionSubmeter()" class="submeter">Submeter</button>
+                <input type="reset" onclick="FunctionLimpar()" name="reset" class="reset" value="Limpar" />
+            </div>
+            </form>
+        </div>
+        <div class="resultado" id="resultado">
+            <div class="row">
+                <div class="column" id="column-zona1">
+                    <div>
+                        <h2>Zona 1</h2>
+                        <span id="zona1"></span>
+                    </div>
+                    <div class="zona1-content">
+                        <br><a>€/m<sup>2</sup>: </a><br>
+                        <a>área: </a><br>
+                        <a>idade: </a><br>
+                        <a>garagem: </a><br>
+                        <a>proximidade transportes públicos: </a><br>
+                    </div>
+                </div>
+                <div class="column">
+                  <h2>Zona 2</h2>
+                  <span id="zona2"></span>
+                </div>
+                <div class="column">
+                  <h2>Zona 3</h2>
+                  <span id="zona3"></span>
+                </div>
+              </div>
+        </div>
+    </div>
 
 
     <div id="footer">
@@ -356,10 +417,10 @@
             <div class="column">
                 <img class="imagem_logo2" src="img/logo_remax.jpg"/> 
                 <div class="redes_sociais">
-                    <img class="face" src="img/face.jpg"/>
-                    <img class="insta" src="img/insta.jpg"/>
-                    <img class="linkedin" src="img/linkedin.jpg"/>
-                    <img class="youtube" src="img/youtube.jpg"/>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin-square"></i>
+                    <i class="fa fa-youtube-play"></i>
                 </div>
             </div>
             <div class="footer_menu">
@@ -392,14 +453,5 @@
         </div>
     </div>
 
-    <script type="text/javascript">
-        function FApartamento(){
-            if(document.getElementsByClassName('menu-apartamento').checked)
-                document.getElementById('menu-apartamento1').show();
-            else
-                document.getElementById('menu-apartamento1').hide();
-        }
-      
-    </script>
 </body>
 </html>
