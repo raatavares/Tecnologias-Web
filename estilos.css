@@ -797,6 +797,7 @@ Calculo do Preço do Imóvel
 
         .submeter:hover{
             background-color: #002770;
+            cursor: pointer;
         }
 
     .reset{
@@ -811,6 +812,7 @@ Calculo do Preço do Imóvel
 
         .reset:hover{
             background-color: #751215;
+            cursor: pointer;
         }
 
     .resultado{
@@ -819,12 +821,21 @@ Calculo do Preço do Imóvel
         margin-top: 10px;
     }
 
+    .row{
+        padding-top: 10px;
+    }
 
         .resultado .column {
             float: left;
-            width: 33%;
-            border-right: 1px solid black;
+            width: 31.6%;
+            padding: 0 10px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
             text-align: center;
+            background-color: #f1f1f1;
         }
 
     .show {
@@ -840,8 +851,9 @@ Calculo do Preço do Imóvel
             font-size: 12px;
         }
 
-        #column-zona:hover div + div{
+        #column-zona div:hover + div{
             display: block;
+            margin-left: 5px;
         }
 
 /********
