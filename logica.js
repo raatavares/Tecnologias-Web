@@ -44,20 +44,48 @@ function FunctionCalculo() {
 function FunctionSubmeter() {
   area = document.getElementById("area").value;
   idade = document.getElementsByName("idade");
-  if (idade[0].checked) 
+  if (idade[0].checked){
       c1 = 1;
-  else if (idade[1].checked) 
+      document.getElementById("Zona1-idade").innerHTML = "Inferior a 6 anos";
+      document.getElementById("Zona2-idade").innerHTML = "Inferior a 6 anos";
+      document.getElementById("Zona3-idade").innerHTML = "Inferior a 6 anos";
+  }else if (idade[1].checked) { 
       c1 = 0.95;
-  else if (idade[2].checked) 
+      document.getElementById("Zona1-idade").innerHTML = "Entre 7 a 10 anos";
+      document.getElementById("Zona2-idade").innerHTML = "Entre 7 a 10 anos";
+      document.getElementById("Zona3-idade").innerHTML = "Entre 7 a 10 anos";
+    }
+  else if (idade[2].checked) {
       c1 = 0.9;
-  if(document.getElementById("garagem").checked == true)
+      document.getElementById("Zona1-idade").innerHTML = "Superior a 11 anos";
+      document.getElementById("Zona2-idade").innerHTML = "Superior a 11 anos";
+      document.getElementById("Zona3-idade").innerHTML = "Superior a 11 anos";
+    }
+
+  if(document.getElementById("garagem").checked == true){
     c2 = 1;
-  else
+    document.getElementById("Zona1-garagem").innerHTML = "Com";
+    document.getElementById("Zona2-garagem").innerHTML = "Com";
+    document.getElementById("Zona3-garagem").innerHTML = "Com";
+  }
+  else{
     c2 = 0.95;
-  if(document.getElementById("transportes").checked == true)
+    document.getElementById("Zona1-garagem").innerHTML = "Sem";
+    document.getElementById("Zona2-garagem").innerHTML = "Sem";
+    document.getElementById("Zona3-garagem").innerHTML = "Sem";
+  }
+  if(document.getElementById("transportes").checked == true){
     c3 = 1;
-  else
+    document.getElementById("Zona1-transportes").innerHTML = "Com";
+    document.getElementById("Zona2-transportes").innerHTML = "Com";
+    document.getElementById("Zona3-transportes").innerHTML = "Com";
+  }
+  else{
     c3 = 0.9;
+    document.getElementById("Zona1-transportes").innerHTML = "Sem";
+    document.getElementById("Zona2-transportes").innerHTML = "Sem";
+    document.getElementById("Zona3-transportes").innerHTML = "Sem";
+  }
   zona1 = area*1200*c1*c2*c3;
   zona2 = area*2000*c1*c2*c3;
   zona3 = area*2500*c1*c2*c3;
@@ -65,9 +93,15 @@ function FunctionSubmeter() {
   document.getElementById("zona2").innerHTML = zona2+" €";
   document.getElementById("zona3").innerHTML = zona3+" €";
 
+  document.getElementById("Zona1-area").innerHTML = area;
+  document.getElementById("Zona2-area").innerHTML = area;
+  document.getElementById("Zona3-area").innerHTML = area;
+
  if(document.getElementById("resultado").style.display != "contents")
     document.getElementById("resultado").style.display = "contents";
 }
+
+
 
 function FunctionLimpar(){
   if(document.getElementById("resultado").style.display == "contents")

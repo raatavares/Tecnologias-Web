@@ -840,7 +840,7 @@ Calculo do Preço do Imóvel
             font-size: 12px;
         }
 
-        #column-zona1:hover div + div{
+        #column-zona:hover div + div{
             display: block;
         }
 
