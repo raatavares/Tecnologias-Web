@@ -232,6 +232,26 @@ Imagens Azuis
     border-radius: 12px;
     display: flex;}
 
+    .novis{width: 100%;
+    border-spacing:8px 8px}
+           .novis1 {
+            padding: 8px;
+             width: 10%;
+            height: 200px;
+            background-image: url("img/t3visa.jpg");
+            border-radius: 10px;
+            padding:8px;
+            background-repeat: no-repeat;  
+            background-size: cover;
+            cursor: pointer;
+            }
+       
+        .novis h3{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;}
+
 .menu3{display: flex;
     align-items: flex-end;
     justify-content: flex-end;}
