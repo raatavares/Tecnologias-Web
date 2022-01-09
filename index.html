@@ -443,28 +443,22 @@
                 <legend><p>Financiamento</p></legend>
                 <div class="row">   
                     <div class="column" id="column-fin">
-                        <i class="fa fa-home" style="font-size:48px;"></i>
-                        <p>Custo</p>
-                        <input type="number" name="amountInput1" min="0" max="1111111" value="0" oninput="this.form.amountRange1.value=this.value" /><br>
-                        <input type="range" name="amountRange1" min="0" max="1111111" value="0" step="1" oninput="this.form.amountInput1.value=this.value"/>
-                    </div>
-                    <div class="column" id="column-fin">
                         <i class="fa fa-money" style="font-size:48px;"></i>
                         <p>Entrada Inicial</p>
-                        <input type="number" name="amountInput2" min="0" max="1000000" value="0" oninput="this.form.amountRange2.value=this.value" /><br>
-                        <input type="range" name="amountRange2" min="0" max="1000000" value="0" step="1" oninput="this.form.amountInput2.value=this.value"/>
+                        <input type="number" id="recebe-entrada" name="amountInput1" min="0" max="1000000" value="0" oninput="this.form.amountRange1.value=this.value" /><br>
+                        <input type="range" name="amountRange1" min="0" max="1000000" value="0" step="1" oninput="this.form.amountInput1.value=this.value"/>
                     </div>
                     <div class="column" id="column-fin">
                         <i class="fa fa-money" style="font-size:48px;"></i>
                         <p>Valor de Empréstimo</p>
-                        <input type="number" name="amountInput3" min="0" max="1000000" value="0" oninput="this.form.amountRange3.value=this.value" /><br>
-                        <input type="range" name="amountRange3" min="0" max="1000000" value="0" step="1" oninput="this.form.amountInput3.value=this.value"/>
+                        <input type="number" id="recebe-emprestimo" name="amountInput2" min="0" max="1000000" value="0" oninput="this.form.amountRange2.value=this.value" /><br>
+                        <input type="range" name="amountRange2" min="0" max="1000000" value="0" step="1" oninput="this.form.amountInput2.value=this.value"/>
                     </div>
                     <div class="column" id="column-fin">
                         <i class="fa fa-calendar" style="font-size:48px;"></i>
                         <p>Duração (anos)</p>
-                        <input type="number" name="amountInput4" min="0" max="50" value="0" oninput="this.form.amountRange4.value=this.value" /><br>
-                        <input type="range" name="amountRange4" min="0" max="50" value="0" step="1" oninput="this.form.amountInput4.value=this.value"/>
+                        <input type="number" id="recebe-anos" name="amountInput3" min="0" max="50" value="0" oninput="this.form.amountRange3.value=this.value" /><br>
+                        <input type="range" name="amountRange3" min="0" max="50" value="0" step="1" oninput="this.form.amountInput3.value=this.value"/>
                     </div> 
                 </div> 
             </fieldset>
@@ -475,22 +469,58 @@
             <div class="ResultadoFin" id="ResultadoFin">
                 <table>
                 <tr class="column" id="column-fin1">
-                    <img src="img/banco_CA.jpg" class="img_ca"/>
-                    <p>Crédito Agrícula Crédito habitação Taxa variável</p>
-                    <span>variável</span>
-                    <br>
+                    <div class="box-banco">
+                        <img src="img/banco_CA.jpg" class="img_ca"/>
+                        <div class="box-banco-text">
+                            <p>Crédito Agrícula Crédito habitação Taxa variável</p>
+                            <span>variável</span>
+                            <div class="bos-resultado">
+                                <a>Montante total: <span id="Montante-total"></span> €</a><br>
+                                <a>Valor do empréstimo: <span id="emprestimo"></span> €</a><br>
+                                <a>Taxa de juro global: <span id="juro-global1"></span> %</a><br>
+                                <a>Spread: <span id="spread1"></span> %</a><br>
+                                <a>Valor da entrada inicial: <span id="entrada-inicial"></span> €</a><br>
+                                <a>Valor mensal da prestação: <span id="prestacoes1"></span> €</a><br>
+                                <a href="#">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
                 </tr>
                 <tr class="column" id="column-fin1">
-                    <img src="img/banco_milennium.png" class="img_mill"/>
-                    <p>Millennium Crédito habitação Taxa variável</p>
-                    <span>variável</span>
-                    <br>
+                    <div class="box-banco">
+                        <img src="img/banco_milennium.png" class="img_mill"/>
+                        <div class="box-banco-text">
+                            <p>Millennium Crédito habitação Taxa variável</p>
+                            <span>variável</span>
+                            <div class="bos-resultado">
+                                <a>Montante total: <span id="Montante-total1"></span> €</a><br>
+                                <a>Valor do empréstimo: <span id="emprestimo1"></span> €</a><br>
+                                <a>Taxa de juro global: <span id="juro-global2"></span> %</a><br>
+                                <a>Spread: <span id="spread2"></span> %</a><br>
+                                <a>Valor da entrada inicial: <span id="entrada-inicial1"></span> €</a><br>
+                                <a>Valor mensal da prestação: <span id="prestacoes2"></span> €</a><br>
+                                <a href="#">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
                 </tr>
                 <tr class="column" id="column-fin1">
-                    <img src="img/banco_CGD.png" class="img_cgd"/>
-                    <p>Caixa Geral de Depósito Crédito habitação Taxa variável</p>
-                    <span>variável</span>
-                    <br>
+                    <div class="box-banco">
+                        <img src="img/banco_CGD.png" class="img_cgd"/>
+                        <div class="box-banco-text">
+                            <p>Caixa Geral de Depósito Crédito habitação Taxa variável</p>
+                            <span>variável</span>
+                            <div class="bos-resultado">
+                                <a>Montante total: <span id="Montante-total2"></span> €</a><br>
+                                <a>Valor do empréstimo: <span id="emprestimo2"></span> €</a><br>
+                                <a>Taxa de juro global: <span id="juro-global3"></span> %</a><br>
+                                <a>Spread: <span id="spread3"></span> %</a><br>
+                                <a>Valor da entrada inicial: <span id="entrada-inicial2"></span> €</a><br>
+                                <a>Valor mensal da prestação: <span id="prestacoes3"></span> €</a><br>
+                                <a href="#">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
                 </tr>
             </table>
             </div>

@@ -114,5 +114,51 @@ function FunctionFinanciamento() {
 }
 
 function FunctionCalcFinanciamento() {
-  document.getElementById("ResultadoFin").classList.toggle("show");
+  entrada = document.getElementById("recebe-entrada").value;
+  emprestimo = document.getElementById("recebe-emprestimo").value;
+  anos = document.getElementById("recebe-anos").value;
+
+  function generateRandomFloatInRange(min, max) {
+    return (Math.random() * 4) + 1;
+  }
+  Spread1 = generateRandomFloatInRange(1.000, 4.999).toFixed(3);
+  document.getElementById("spread1").innerHTML = Spread1;
+  function generateRandomFloatInRange(min, max) {
+    return (Math.random() * 4) + 1;
+  }
+  Spread2 = generateRandomFloatInRange(1.000, 4.999).toFixed(3);
+  document.getElementById("spread2").innerHTML = Spread2;
+  function generateRandomFloatInRange(min, max) {
+    return (Math.random() * 4) + 1;
+  }
+  Spread3 = generateRandomFloatInRange(1.000, 4.999).toFixed(3);
+  document.getElementById("spread3").innerHTML = Spread3;
+
+  //meses = anos*12;
+  //ValorMensal1 = (emprestimo + TaxaGlobal1)/meses;
+  //ValorMensal2 = (emprestimo + TaxaGlobal2)/meses;
+  //ValorMensal3 = (emprestimo + TaxaGlobal3)/meses;
+  TaxaGlobal1 = 0.5 + Spread1;
+  TaxaGlobal2 = 0.5 + Spread2;
+  TaxaGlobal3 = 0.5 + Spread3;
+  montanteTotal = entrada + emprestimo;
+
+  //document.getElementById("prestacoes1").innerHTML = ValorMensal1;
+  //document.getElementById("prestacoes2").innerHTML = ValorMensal2;
+  //document.getElementById("prestacoes3").innerHTML = ValorMensal3;
+  document.getElementById("juro-global1").innerHTML = TaxaGlobal1;
+  document.getElementById("juro-global2").innerHTML = TaxaGlobal2;
+  document.getElementById("juro-global3").innerHTML = TaxaGlobal3;
+  document.getElementById("Montante-total").innerHTML = montanteTotal;
+  document.getElementById("Montante-total1").innerHTML = montanteTotal;
+  document.getElementById("Montante-total2").innerHTML = montanteTotal;
+  document.getElementById("emprestimo").innerHTML = emprestimo;
+  document.getElementById("emprestimo1").innerHTML = emprestimo;
+  document.getElementById("emprestimo2").innerHTML = emprestimo;
+  document.getElementById("entrada-inicial").innerHTML = entrada;
+  document.getElementById("entrada-inicial1").innerHTML = entrada;
+  document.getElementById("entrada-inicial2").innerHTML = entrada;
+
+  if(document.getElementById("ResultadoFin").style.display != "contents")
+  document.getElementById("ResultadoFin").style.display = "contents";
 }
