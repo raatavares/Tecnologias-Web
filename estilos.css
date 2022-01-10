@@ -208,6 +208,28 @@ Barra de pesquisa com imagem de fundo
         margin-right: 23%;
         position: relative;
     }
+
+    .icon-procura {
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        padding-left: 20px;
+        border-left: solid 1px #eceff2;
+        background-color: white;
+    }
+    
+        .icon-procura i {
+            font-size: 25px;
+            color: #808080;
+            cursor: pointer;
+        }
+        
+            .icon-procura i:hover {
+                transform: scale(0.8);
+                transition: 0.3s ease;
+            }
         
        .comprar_arrendar{
             display: flex;
@@ -241,7 +263,7 @@ Barra de pesquisa com imagem de fundo
                 #search{
                     background-color: white;
                     border: none;
-                    height: 60px;
+                    height: 65px;
                     width: 100%;
                     outline: none;
                     font-size: medium;
@@ -886,8 +908,56 @@ Financiamento
     }
 
     .box-banco-text{
+        padding-top: 5px;
         padding-left: 200px;
+        position: relative;
     }
+
+        #credito{
+            color: #003aa8;
+        }
+
+        #var{
+            font-weight: bold;
+        }
+
+        .box-linha{
+            display: inline-flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .spread{
+            width: 20%;
+        }
+
+        .TAEG{
+            width: 20%;
+        }
+
+        .prestacoes{
+            width: 20%;
+        }
+
+        .prestacoes span{
+            color: forestgreen;
+        }
+
+        .Verm{
+            width: 20%;
+            cursor: pointer;
+        }
+
+        .Verm a{
+            color: #0054a4;
+            text-decoration: none;
+        }
+
+        .box-direita{
+            float: right;
+            padding-right: 15px;
+            display: none;
+        }
 
     .ResultadoFin{
         display: none;
@@ -901,19 +971,27 @@ Financiamento
     }
 
     .img_ca{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 5px;
         height: 100px;
         width: auto;
         float: left;
-        vertical-align: middle;
     }
 
     .img_mill{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 5px;
         height: 100px;
         width: auto;
         float: left;
     }
 
     .img_cgd{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 5px;
         height: 100px;
         width: auto;
         float: left;

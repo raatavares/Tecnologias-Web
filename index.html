@@ -57,7 +57,9 @@
             </div>
             <div id="pesquisa">
                 <input type="text" name="search" id="search" placeholder=" Onde? (Concelho ou Freguesia ou Zona ou Morada)" />
-                <i class="fa fa-search" style="font-size:30px; padding-top:0.5em; padding-right:0.5em; background-color: white;"></i> 
+                <div class="icon-procura">
+                    <i class="fa fa-search"></i> 
+                </div>
             </div>	              
         </div>
         <button onclick="topFunction()" id="TopBtn" class="btnvermais"> <i class="fa fa-arrow-down"></i> <span>Ver mais</span></button>  
@@ -472,16 +474,31 @@
                     <div class="box-banco">
                         <img src="img/banco_CA.jpg" class="img_ca"/>
                         <div class="box-banco-text">
-                            <p>Crédito Agrícula Crédito habitação Taxa variável</p>
-                            <span>variável</span>
-                            <div class="bos-resultado">
-                                <a>Montante total: <span id="Montante-total"></span> €</a><br>
-                                <a>Valor do empréstimo: <span id="emprestimo"></span> €</a><br>
-                                <a>Taxa de juro global: <span id="juro-global1"></span> %</a><br>
-                                <a>Spread: <span id="spread1"></span> %</a><br>
-                                <a>Valor da entrada inicial: <span id="entrada-inicial"></span> €</a><br>
-                                <a>Valor mensal da prestação: <span id="prestacoes1"></span> €</a><br>
-                                <a href="#">Ver oferta</a>
+                            <a id="credito">Crédito Agrícula Crédito habitação Taxa variável</a><br>
+                            <span id="var">variável</span><br><br><br>
+                            <div class="box-resultado">
+                                <div class="box-linha">
+                                    <div class="spread">
+                                        <span id="spread1"></span><br>
+                                        <a> Spread desde </a>
+                                    </div>
+                                    <div class="TAEG">
+                                        <span id="juro-global1"></span><br>
+                                        <a>TAEG desde</a>
+                                    </div>
+                                    <div class="prestacoes">
+                                        <span id="prestacoes1"></span><br>
+                                        <a>€/Mes</a>
+                                    </div>
+                                    <div class="Verm">
+                                        <a onclick="FunctionDetalhes()">Ver detalhes</a>
+                                    </div>
+                                </div>
+                                <div class="box-direita" id="box-direita">
+                                    <a>Montante total: <span id="Montante-total"></span></a><br>
+                                    <a>Valor do empréstimo: <span id="emprestimo"></span></a><br>
+                                    <a>Valor da entrada inicial: <span id="entrada-inicial"></span></a><br>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -490,16 +507,31 @@
                     <div class="box-banco">
                         <img src="img/banco_milennium.png" class="img_mill"/>
                         <div class="box-banco-text">
-                            <p>Millennium Crédito habitação Taxa variável</p>
-                            <span>variável</span>
+                            <a  id="credito">Millennium Crédito habitação Taxa variável</a><br>
+                            <span id="var">variável</span><br><br><br>
                             <div class="bos-resultado">
-                                <a>Montante total: <span id="Montante-total1"></span> €</a><br>
-                                <a>Valor do empréstimo: <span id="emprestimo1"></span> €</a><br>
-                                <a>Taxa de juro global: <span id="juro-global2"></span> %</a><br>
-                                <a>Spread: <span id="spread2"></span> %</a><br>
-                                <a>Valor da entrada inicial: <span id="entrada-inicial1"></span> €</a><br>
-                                <a>Valor mensal da prestação: <span id="prestacoes2"></span> €</a><br>
-                                <a href="#">Ver oferta</a>
+                                <div class="box-linha">
+                                    <div class="spread">
+                                        <span id="spread2"></span><br>
+                                        <a> Spread desde </a>
+                                    </div>
+                                    <div class="TAEG">
+                                        <span id="juro-global2"></span><br>
+                                        <a>TAEG desde</a>
+                                    </div>
+                                    <div class="prestacoes">
+                                        <span id="prestacoes2"></span><br>
+                                        <a>€/Mes</a>
+                                    </div>
+                                    <div class="Verm">
+                                        <a onclick="FunctionDetalhes2()">Ver detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-direita" id="box-direita2">
+                                <a>Montante total: <span id="Montante-total1"></span></a><br>
+                                <a>Valor do empréstimo: <span id="emprestimo1"></span></a><br>
+                                <a>Valor da entrada inicial: <span id="entrada-inicial1"></span></a><br>
                             </div>
                         </div>
                     </div>
@@ -508,16 +540,31 @@
                     <div class="box-banco">
                         <img src="img/banco_CGD.png" class="img_cgd"/>
                         <div class="box-banco-text">
-                            <p>Caixa Geral de Depósito Crédito habitação Taxa variável</p>
-                            <span>variável</span>
+                            <a id="credito">Caixa Geral de Depósito Crédito habitação Taxa variável</a><br>
+                            <span id="var">variável</span><br><br><br>
                             <div class="bos-resultado">
-                                <a>Montante total: <span id="Montante-total2"></span> €</a><br>
-                                <a>Valor do empréstimo: <span id="emprestimo2"></span> €</a><br>
-                                <a>Taxa de juro global: <span id="juro-global3"></span> %</a><br>
-                                <a>Spread: <span id="spread3"></span> %</a><br>
-                                <a>Valor da entrada inicial: <span id="entrada-inicial2"></span> €</a><br>
-                                <a>Valor mensal da prestação: <span id="prestacoes3"></span> €</a><br>
-                                <a href="#">Ver oferta</a>
+                                <div class="box-linha">
+                                    <div class="spread">
+                                        <span id="spread3"></span><br>
+                                        <a> Spread desde </a>
+                                    </div>
+                                    <div class="TAEG">
+                                        <span id="juro-global3"></span><br>
+                                        <a>TAEG desde</a>
+                                    </div>
+                                    <div class="prestacoes">
+                                        <span id="prestacoes3"></span><br>
+                                        <a>€/Mes</a>
+                                    </div>
+                                    <div class="Verm">
+                                        <a onclick="FunctionDetalhes3()">Ver detalhes</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-direita" id="box-direita3">
+                                <a>Montante total: <span id="Montante-total2"></span></a><br>
+                                <a>Valor do empréstimo: <span id="emprestimo2"></span></a><br>
+                                <a>Valor da entrada inicial: <span id="entrada-inicial2"></span></a><br>
                             </div>
                         </div>
                     </div>

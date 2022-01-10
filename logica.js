@@ -117,48 +117,65 @@ function FunctionCalcFinanciamento() {
   entrada = document.getElementById("recebe-entrada").value;
   emprestimo = document.getElementById("recebe-emprestimo").value;
   anos = document.getElementById("recebe-anos").value;
+  
+  Spread1 = ((Math.random() * 4) + 1).toFixed(2);
+  document.getElementById("spread1").innerHTML = Spread1+"%";
+  
+  Spread2 = ((Math.random() * 4) + 1).toFixed(2);
+  document.getElementById("spread2").innerHTML = Spread2+"%";
+  
+  Spread3 = ((Math.random() * 4) + 1).toFixed(2);
+  document.getElementById("spread3").innerHTML = Spread3+"%";
+  
+  TaxaGlobal1 = (0.5 + Number(Spread1)).toFixed(2);
+  TaxaGlobal2 = (0.5 + Number(Spread2)).toFixed(2);
+  TaxaGlobal3 = (0.5 + Number(Spread3)).toFixed(2);
+  meses = Number(anos)*12;
+  ValorMensal1 = (Number(emprestimo) + TaxaGlobal1)/meses;
+  ValorMensal2 = (Number(emprestimo) + TaxaGlobal2)/meses;
+  ValorMensal3 = (Number(emprestimo) + TaxaGlobal3)/meses;
+  montanteTotal = Number(entrada) + Number(emprestimo);
 
-  function generateRandomFloatInRange(min, max) {
-    return (Math.random() * 4) + 1;
-  }
-  Spread1 = generateRandomFloatInRange(1.000, 4.999).toFixed(3);
-  document.getElementById("spread1").innerHTML = Spread1;
-  function generateRandomFloatInRange(min, max) {
-    return (Math.random() * 4) + 1;
-  }
-  Spread2 = generateRandomFloatInRange(1.000, 4.999).toFixed(3);
-  document.getElementById("spread2").innerHTML = Spread2;
-  function generateRandomFloatInRange(min, max) {
-    return (Math.random() * 4) + 1;
-  }
-  Spread3 = generateRandomFloatInRange(1.000, 4.999).toFixed(3);
-  document.getElementById("spread3").innerHTML = Spread3;
+  document.getElementById("prestacoes1").innerHTML = ValorMensal1.toFixed(2)+"€";
+  document.getElementById("prestacoes2").innerHTML = ValorMensal2.toFixed(2)+"€";
+  document.getElementById("prestacoes3").innerHTML = ValorMensal3.toFixed(2)+"€";
+  document.getElementById("juro-global1").innerHTML = TaxaGlobal1+"%";
+  document.getElementById("juro-global2").innerHTML = TaxaGlobal2+"%";
+  document.getElementById("juro-global3").innerHTML = TaxaGlobal3+"%";
+  document.getElementById("Montante-total").innerHTML = montanteTotal+"€";
+  document.getElementById("Montante-total1").innerHTML = montanteTotal+"€";
+  document.getElementById("Montante-total2").innerHTML = montanteTotal+"€";
+  document.getElementById("emprestimo").innerHTML = emprestimo+"€";
+  document.getElementById("emprestimo1").innerHTML = emprestimo+"€";
+  document.getElementById("emprestimo2").innerHTML = emprestimo+"€";
+  document.getElementById("entrada-inicial").innerHTML = entrada+"€";
+  document.getElementById("entrada-inicial1").innerHTML = entrada+"€";
+  document.getElementById("entrada-inicial2").innerHTML = entrada+"€";
 
-  //meses = anos*12;
-  //ValorMensal1 = (emprestimo + TaxaGlobal1)/meses;
-  //ValorMensal2 = (emprestimo + TaxaGlobal2)/meses;
-  //ValorMensal3 = (emprestimo + TaxaGlobal3)/meses;
-  TaxaGlobal1 = 0.5 + Spread1;
-  TaxaGlobal2 = 0.5 + Spread2;
-  TaxaGlobal3 = 0.5 + Spread3;
-  montanteTotal = entrada + emprestimo;
-
-  //document.getElementById("prestacoes1").innerHTML = ValorMensal1;
-  //document.getElementById("prestacoes2").innerHTML = ValorMensal2;
-  //document.getElementById("prestacoes3").innerHTML = ValorMensal3;
-  document.getElementById("juro-global1").innerHTML = TaxaGlobal1;
-  document.getElementById("juro-global2").innerHTML = TaxaGlobal2;
-  document.getElementById("juro-global3").innerHTML = TaxaGlobal3;
-  document.getElementById("Montante-total").innerHTML = montanteTotal;
-  document.getElementById("Montante-total1").innerHTML = montanteTotal;
-  document.getElementById("Montante-total2").innerHTML = montanteTotal;
-  document.getElementById("emprestimo").innerHTML = emprestimo;
-  document.getElementById("emprestimo1").innerHTML = emprestimo;
-  document.getElementById("emprestimo2").innerHTML = emprestimo;
-  document.getElementById("entrada-inicial").innerHTML = entrada;
-  document.getElementById("entrada-inicial1").innerHTML = entrada;
-  document.getElementById("entrada-inicial2").innerHTML = entrada;
 
   if(document.getElementById("ResultadoFin").style.display != "contents")
   document.getElementById("ResultadoFin").style.display = "contents";
+}
+
+//financiamento -> ver detalhes
+
+function FunctionDetalhes() {
+  if(document.getElementById("box-direita").style.display == "none")
+    document.getElementById("box-direita").style.display = "block";
+  else
+    document.getElementById("box-direita").style.display = "none";
+}
+
+function FunctionDetalhes2() {
+  if(document.getElementById("box-direita2").style.display == "none")
+    document.getElementById("box-direita2").style.display = "block";
+  else
+    document.getElementById("box-direita2").style.display = "none";
+}
+
+function FunctionDetalhes3() {
+  if(document.getElementById("box-direita3").style.display == "none")
+    document.getElementById("box-direita3").style.display = "block";
+  else
+    document.getElementById("box-direita3").style.display = "none";
 }
