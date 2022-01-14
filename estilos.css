@@ -25,6 +25,18 @@ body{
     width: 100%;
     height: 66px;
     vertical-align: center;
+    justify-content: space-between;
+    max-height: fit-content;
+}
+
+#menu-parte1{
+    display: inline-flex;
+    padding-right: 0;
+}
+
+#menu-parte2{
+    display: inline-flex;
+    padding-left: 0;
 }
 
     .menu1 a{
@@ -38,7 +50,7 @@ body{
     .imagem_logo{
         cursor: pointer;
         max-height: 60%;
-        margin-top: 0.9%;
+        margin-top: 12px;
         margin-right: 16px;
         width: auto;
     } 
@@ -70,7 +82,7 @@ body{
                     background-color: #f9f9f9;
                     min-width: 160px;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                    z-index: 1;
+                    z-index: 2;
                 }
               
                 .dropdown:hover .dropdown-content {
@@ -99,9 +111,10 @@ body{
 
         .parte2{
             display: flex;
-            width: 100%;
+            padding-right: 0%;
+            width: 80%;
             list-style-type:none;
-            justify-content: flex-end;
+            padding-inline-start: 0;
         }
     
             .parte2 li{
@@ -126,7 +139,7 @@ body{
 
             .dropdown2 span{
                 display: inline-flex;
-            }
+            }            
 
             .dropdown2 i{
                 margin-left: 6px;
@@ -147,6 +160,7 @@ body{
                     background-color: #f9f9f9;
                     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                     z-index: 1;
+                    margin-top: 50px;
                 }
 
                 .dropdown2-content p{
@@ -167,12 +181,17 @@ body{
                     display: block;
                 }
 
+                .parte2, .dropdown2 {
+                    display: inline-flex;
+                }
+
             .opcao_entrar{
                 cursor: pointer;
                 display: flex;
                 padding-left: 8px;
                 padding-right: 8px;
                 margin-left: 16px;
+                text-align: right;
             }
                 .opcao_entrar a{
                     padding-top: 20px;
@@ -184,6 +203,28 @@ body{
                 .opcao_entrar:hover{
                     color:#0054a4;
                 }
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
 
 /*************************************
 Barra de pesquisa com imagem de fundo
@@ -330,11 +371,13 @@ Imagens Azuis
     display: inline;
 }
     
-.titulo{color:black;
+.titulo{
+    color:black;
     font-size: 35px;
     font-weight: bold;
     text-align: left;
-margin: 0;}
+    margin: 0;
+}
 
 .newsver{font-size: 15px;
     position: relative;
@@ -359,9 +402,6 @@ margin: 0;}
         cursor: pointer;
     }
            
-
-
-
     .meenn{
         padding-left: 12%;
         padding-right: 12%;
@@ -384,67 +424,64 @@ margin: 0;}
         padding-top: 1%;
         float: right;
         display: flex;}
+        
         .novis{
             width: 100%;
             border-spacing:8px 8px
         }
+
+.novis2 {
+    padding: 8px;
+    width: 10%;
+    height: 200px;
+    background-image: url("img/t3oliv.jpg");
+    border-radius: 10px;
+    padding:8px;
+    background-repeat: no-repeat;  
+    background-size: contain;
+    cursor: pointer;
+}
+
+.mensss{
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 76%;
+    padding-top:3% ;
+}
+
+.menu4{
+    display: inline;
+}
     
+.titulo3{color:black;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: left;
+margin: 0;}
 
-        .novis2 {
-            padding: 8px;
-            width: 10%;
-            height: 200px;
-            background-image: url("img/t3oliv.jpg");
-            border-radius: 10px;
-            padding:8px;
-            background-repeat: no-repeat;  
-            background-size: contain;
-            cursor: pointer;
-        }
+.emp{font-size: 15px;
+    position: relative;
+    padding-top: 1%;
+    float: right;
+    display: flex;}
 
+    .novis{
+        width: 100%;
+        border-spacing:8px 8px
+    } 
+    
+    .novis3{
+        padding: 8px;
+        width: 10%;
+        height: 200px;
+        background-image: url("img/t4visa.jpg");
+        border-radius: 10px;
+        padding:8px;
+        background-repeat: no-repeat;  
+        background-size: contain;
+        cursor: pointer;
+    }
 
-
-
-
-        .mensss{
-            padding-left: 12%;
-            padding-right: 12%;
-            width: 76%;
-            padding-top:3% ;
-        }
-        
-        .menu4{
-            display: inline;
-        }
-            
-        .titulo3{color:black;
-            font-size: 35px;
-            font-weight: bold;
-            text-align: left;
-        margin: 0;}
-        
-        .emp{font-size: 15px;
-            position: relative;
-            padding-top: 1%;
-            float: right;
-            display: flex;}
-        
-            .novis{
-                width: 100%;
-                border-spacing:8px 8px
-            } 
-            
-            .novis3{
-                padding: 8px;
-                width: 10%;
-                height: 200px;
-                background-image: url("img/t4visa.jpg");
-                border-radius: 10px;
-                padding:8px;
-                background-repeat: no-repeat;  
-                background-size: contain;
-                cursor: pointer;
-            }
 
 
 
@@ -992,25 +1029,7 @@ Financiamento
         display: contents;
     }
 
-    .img_ca{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 5px;
-        height: 100px;
-        width: auto;
-        float: left;
-    }
-
-    .img_mill{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 5px;
-        height: 100px;
-        width: auto;
-        float: left;
-    }
-
-    .img_cgd{
+    .img_banco{
         margin-top: 50px;
         margin-bottom: 50px;
         margin-left: 5px;
@@ -1086,3 +1105,324 @@ Financiamento
         }
 
         .fim_esquerda{float: left;}      
+
+
+
+/****************
+Site responsive
+****************/
+
+@media screen and (max-width:1050px) {
+    #parte2{
+        position:absolute;
+        left: 0px;
+        height: 20%;
+        width: 320px;
+        top: 70px;
+        background-color:white;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        display:none;
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+    .parte2{
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        padding: 0;
+        margin: 0;
+    }
+    .dropspan{
+        flex-direction: column;
+        padding-left: 100px;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: center;
+    }
+    .dropdown2:hover{
+        box-shadow: none;
+        border: 0;
+    }
+    .dropdown2 span{
+        display: block;
+    }     
+    .dropdown2-content{
+        background-color: white;
+        margin: 40px;
+    }       
+    .burger{
+        padding-top: 16px;
+        margin-right: 10px;
+        display: block;
+    }
+
+    /*************
+    Responsive Imagens Azuis
+    **************/
+    #procura_img{
+        max-width: 100%;
+        height: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    #comprar_vender_img{
+        max-width: 100%;
+        height: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    /*************************
+    Responsive Concelhos mais procurados
+    *************************/
+    .mais_procurados{
+        margin-left: 2%;
+        margin-right: 2%;
+        max-width: 96%;
+        padding-top: 64px;
+        margin-bottom: 32px;
+    }
+        .procurados_title h2{
+            margin-bottom: 0;
+        }
+
+    /*******************
+    Responsive Agentes & Agências
+    *******************/
+    .agentes_agencias{
+        margin-left: 2%;
+        margin-right: 2%;
+        max-width: 96%;
+        padding-top: 64px;
+        margin-bottom: 32px;
+    }
+
+        .agen_subtitle{
+            color: #4c555f;
+            font-weight: bold;
+        }
+
+        .agen_cima{
+            display: block;
+            position: relative;
+            margin-bottom: 32px;
+        }
+
+            .agen_cima h2{
+                width: 100%;
+                color: black;
+            }
+
+            .agen_cima p{
+                width: 100%;
+            }
+
+    
+    /**********************
+    Responsive Empreendimentos
+    **********************/
+    .empreendimentos{
+        margin-left: 2%;
+        margin-right: 2%;
+        max-width: 96%;
+        padding-top: 64px;
+        display: block;
+        position: relative;
+    }
+
+        .img_empre{
+            height: 400px;
+            width: 100%;
+        }
+
+        .empre_direita{
+            margin-left: 0%;
+            height: auto;
+        }
+            
+            .titulo{
+                margin-top: 0%;
+            }
+            
+            .button_empre{
+                margin-left: 10%;
+                margin-right: 10%;
+                width: 80%;
+            }
+
+            .button_empre:hover{
+                background-color: #003aa8;
+            }
+
+
+    /**********************
+    Responsive Pesquisas mais comuns
+    **********************/
+    .Pesquisas_mais_comuns{
+        padding-left: 2%;
+        padding-right: 2%;
+        max-width: 96%;
+        padding-top: 64px;
+        padding-bottom: 48px;
+        font-size: 15px;
+    }
+
+    /***************************
+    Responsive Calculo do Preço do Imóvel
+    ***************************/
+    .calculo{
+        padding-left: 2%;
+        padding-right: 2%;
+        max-width: 96%;
+        padding-top: 64px;
+        padding-bottom: 48px;
+        font-size: 15px;
+    }            
+
+    .row{
+        padding-top: 10px;
+        display: inline;
+    }
+
+        .resultado .column {
+            float: none;
+            width: 60%;
+            height: 200;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 0 10px;   
+            padding-bottom: 10px;
+        }
+
+
+    /**************
+    Responsive Financiamento
+    **************/
+    .financiamento{
+        padding-left: 2%;
+        padding-right: 2%;
+        max-width: 96%;
+        padding-top: 64px;
+        padding-bottom: 48px;
+        font-size: 15px;
+    }    
+
+    .img_banco{
+        height: 65px;
+    }
+
+    .box-banco-text{
+        padding-left: 130px;
+    }
+
+    /********
+    Responsive Footer
+    ********/
+    #footer{
+        border-bottom: 0;
+    }
+    .fim{
+        padding-top: 10px;
+        border-top: lightgray solid 1px;
+    }
+    
+}
+        
+
+@media screen and (max-width:650px) {
+    /*************************************
+    Barra de pesquisa com imagem de fundo
+    **************************************/
+        .imagem_fundo span{
+            margin-left: 5%;
+        }
+
+        .comprar{
+            margin-left: 5%;
+            margin-right: 5%;
+        } 
+
+    /*************************
+    Concelhos mais procurados
+    *************************/
+        .tabela_procurados{
+            width: 100%;
+            border-spacing:8px 8px;
+            padding-right: 2%;
+        }
+
+        .tabela_procurados th{
+            display: block;
+            margin-bottom: 8px;
+        }
+
+            .lisboa{
+                padding: 8px;
+                width: 100%;
+                height: 100px;
+            }
+
+            .porto{
+                padding: 8px;
+                width: 100%;
+                height: 100px;
+            }
+
+            .coimbra{
+                padding: 8px;
+                width: 100%;
+                height: 100px;
+            }
+        
+            .braga{
+                padding: 8px;
+                width: 100%;
+                height: 100px;
+            }
+
+            .faro{
+                padding: 8px;
+                width: 100%;
+                height: 100px;
+            }
+
+            .leiria{
+                padding: 8px;
+                width: 100%;
+                height: 100px;
+            }
+
+    /********
+    Responsive Footer
+    ********/
+    #footer{margin-top: 48px;
+        border-top: lightgray solid 1px;
+        border-bottom: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;  
+        padding-top: 2%;
+    }
+
+            .column {
+                float: none;
+                width: 100%;
+                text-align: center;
+            }
+
+            .column ul{
+                padding-left: 0px;
+            }
+
+                .redes_sociais{
+                    display: flex;
+                    justify-content: center;
+                }                   
+                
+            .fim{
+                padding-top: 10px;
+                border-top: lightgray solid 1px;
+            }
+}

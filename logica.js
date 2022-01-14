@@ -1,3 +1,16 @@
+//botão menu
+function Open(){
+  if(document.getElementById("parte2").style.display == "block"){
+    document.getElementById("parte2").style.display="none";
+    document.body.style.overflow = "auto";
+  }else{
+    document.getElementById("parte2").style.display="block";
+    document.body.style.overflow = "hidden";
+  }
+  document.getElementById("burger").classList.toggle("toggle");
+}
+
+
 
 //Cor botoes comprar-arrendar
 function myFunctionArrendar() {
@@ -154,7 +167,9 @@ function FunctionCalcFinanciamento() {
 
 
   if(document.getElementById("ResultadoFin").style.display != "contents")
-  document.getElementById("ResultadoFin").style.display = "contents";
+    document.getElementById("ResultadoFin").style.display = "contents";
+  else
+    document.getElementById("ResultadoFin").style.display = "none";
 }
 
 //financiamento -> ver detalhes
