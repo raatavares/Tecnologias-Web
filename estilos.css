@@ -385,6 +385,136 @@ Imagens Azuis
     float: right;
     display: flex;}
 
+
+
+    .slide {
+        display: flex;
+        margin: 30px 0;
+        overflow: hidden;
+    }
+    
+        .content{
+            display: flex;
+            margin: 30px 0;
+            width: 100%;
+            transition: 0.5s ease;
+        }
+        
+            .item_slide {
+                display: flex;
+                flex-direction: column;
+                width: 23.5%;
+                position: relative;
+                margin: 0 10px;
+            }
+    
+                .box_img {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    overflow: hidden;
+                }
+            
+                .slide .fav, .slide .preco {
+                    position: absolute;
+                    z-index: 2;
+                }
+            
+                    .fav {
+                        right: 0;
+                        z-index: 2;
+                        margin: 15px 15px;
+                        background: rgba(0, 0, 0, 0.2);
+                        padding: 7px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                
+                        .fav:hover {
+                            background: #ce9aa8;
+                            cursor: pointer;
+                            transition: 0.3s ease;
+                        }
+                
+                            .fav:hover>i {
+                                color: red;
+                            }
+                
+                        .fav i {
+                            color: white;
+                            font-size: 18px;
+                        }
+            
+                    .preco {
+                        left: 0;
+                        bottom: 0;
+                        color: white;
+                        font-weight: 800;
+                        margin: 15px;
+                    }
+            
+                .local {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 11px;
+                    padding: 5px 10px;
+                    font-weight: 800;
+                }
+            
+                    .agent_img {
+                        width: 10%;
+                        height: 100%;
+                        border-radius: 20%;
+                    }
+            
+                    .agent_img img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+            
+                .detalhes {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 11px;
+                    font-weight: 800;
+                    background: rgb(218, 228, 234);
+                    padding: 10px;
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            
+                    .detalhes i{
+                        margin: 0 3px;
+                    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .novis{
         width: 100%;
         border-spacing:8px 8px
@@ -1174,6 +1304,25 @@ Site responsive
         margin-right: 0%;
     }
 
+
+    /*******************
+    Novidades - Casas
+    *******************/
+    .menus{
+        padding-left: 2%;
+        padding-right: 2%;
+        width: 96%;
+        padding-top:3% ;
+    }
+
+    .local{
+        display: block;
+    }
+
+    .detalhes {
+        display: block;
+    }
+
     /*************************
     Responsive Concelhos mais procurados
     *************************/
@@ -1426,3 +1575,4 @@ Site responsive
                 border-top: lightgray solid 1px;
             }
 }
+

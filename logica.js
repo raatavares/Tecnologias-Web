@@ -4,6 +4,9 @@ function checkMediaQuery(){
     document.getElementById("parte2").style.display="block";
     document.body.style.overflow = "auto";
   }
+  if(window.innerWidth < 1050){
+    document.getElementById("parte2").style.display="none";
+  }
 }
 
 window.addEventListener('resize', checkMediaQuery);
@@ -38,6 +41,41 @@ var mybutton = document.getElementById("TopBtn");
 function topFunction() {
   document.body.scrollTop = 990;
   document.documentElement.scrollTop = 990;
+}
+
+//Botoes slide img
+function Left()
+{
+  first_val = document.getElementById( "img_first" ).value;
+  last_val = document.getElementById( "img_last" ).value;
+  
+  if(first_val > 1){
+    nome="image"+last_val;
+    document.getElementById(nome).style.display="none";
+    first_val--;
+    nome="image"+first_val;
+    document.getElementById(nome).style.display="block";
+    last_val--;
+  }
+  document.getElementById( "img_first" ).value = first_val;
+  document.getElementById( "img_last" ).value = last_val;
+}
+
+function Right()
+{
+  first_val = document.getElementById( "img_first" ).value;
+  last_val = document.getElementById( "img_last" ).value;
+  
+  if(last_val < 5){
+    nome="image"+first_val;
+    document.getElementById(nome).style.display="none";
+    first_val++;
+    last_val++;
+    nome="image"+last_val;
+    document.getElementById(nome).style.display="block";
+  }
+  document.getElementById( "img_first" ).value = first_val;
+  document.getElementById( "img_last" ).value = last_val;
 }
 
 //Botoes pesquisas mais comuns
