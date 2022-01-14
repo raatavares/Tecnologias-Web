@@ -1,3 +1,13 @@
+//Resolução bug menu
+function checkMediaQuery(){
+  if(window.innerWidth > 1050){
+    document.getElementById("parte2").style.display="block";
+    document.body.style.overflow = "auto";
+  }
+}
+
+window.addEventListener('resize', checkMediaQuery);
+
 //botão menu
 function Open(){
   if(document.getElementById("parte2").style.display == "block"){
@@ -144,9 +154,9 @@ function FunctionCalcFinanciamento() {
   TaxaGlobal2 = (0.5 + Number(Spread2)).toFixed(2);
   TaxaGlobal3 = (0.5 + Number(Spread3)).toFixed(2);
   meses = Number(anos)*12;
-  ValorMensal1 = (Number(emprestimo) + TaxaGlobal1)/meses;
-  ValorMensal2 = (Number(emprestimo) + TaxaGlobal2)/meses;
-  ValorMensal3 = (Number(emprestimo) + TaxaGlobal3)/meses;
+  ValorMensal1 = (Number(emprestimo) + Number(emprestimo) * TaxaGlobal1)/meses;
+  ValorMensal2 = (Number(emprestimo) + Number(emprestimo) * TaxaGlobal2)/meses;
+  ValorMensal3 = (Number(emprestimo) + Number(emprestimo) * TaxaGlobal3)/meses;
   montanteTotal = Number(entrada) + Number(emprestimo);
 
   document.getElementById("prestacoes1").innerHTML = ValorMensal1.toFixed(2)+"€";
