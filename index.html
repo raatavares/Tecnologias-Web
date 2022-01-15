@@ -217,68 +217,285 @@
         </div>
     </div>
 
-    <div class="meenn">
-        <div class="menu3"> 
-            <span class="titulo2">RE/MAX Collection</span>
+    <div class="menus">
+        <div class="menu"> 
+            <span class="titulo">RE/MAX Collection</span>
             <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
-            <div class="remaxc">
-            <span classe="setas">
-                <i class="fa fa-arrow-left"></i>
-                <i class="fa fa-arrow-right"></i>
-            </span>
+            <div class="newsver">
+                <span classe="setas">
+                    <i class="fa fa-arrow-left" onclick="le()"></i>
+                    <i class="fa fa-arrow-right" onclick="rd()"></i>
+                    <input type="hidden" id="img1" value="1">
+                    <input type="hidden" id="img2" value="4">
+                </span>
             </div>
         </div>
-        
-        <div class="menu3l">
-            <table class="novis" style="display: block;">
-                <th class="novis2" onclick="location.href='t3areal.html'">
-                    <h3>50 000</h3></th>
-                <th class="novis2" onclick="location.href='t3areal.html'">
-                    <h3>50 000</h3>
-                </th>
-                <th class="novis2" onclick="location.href='t3areal.html'">
-                    <h3>50 000</h3></th>
-                <th class="novis2" onclick="location.href='t3areal.html'">
-                    <h3>50 000</h3>
-                </th>
-                <th class="novis2" onclick="location.href='t3areal.html'">
-                    <h3>50 000</h3></th>
-                <th class="novis2" onclick="location.href='t3areal.html'">
-                     <h3>50 000</h3>
-            </table>
-        </div>
-    </div>
-    <div classe="mensss">
-        <div class="menu4"> 
-            <span class="titulo3">Empreendimentos</span>
-            <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
-            <div class="emp">
-            <span classe="setas">
-                <i class="fa fa-arrow-left"></i>
-                <i class="fa fa-arrow-right"></i>
-            </span>
+        <div class="slide">
+            <div class="content">
+                <div class="item_slide" id="imagem1">
+                    <div class="box_img">
+                        <img src="img/t3oliv.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">354 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Aveiro - Ílhavo</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamento</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>250 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="imagem2">
+                    <div class="box_img">
+                        <img src="img/dupalm.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">354 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Aveiro - Ílhavo</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamento</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>250 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="imagem3">
+                    <div class="box_img">
+                        <img src="img/t3oliv.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">354 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Aveiro - Ílhavo</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamento</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>250 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="imagem4">
+                    <div class="box_img">
+                        <img src="img/dupalm.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">354 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Aveiro - Ílhavo</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamento</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>250 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="imagem5">
+                    <div class="box_img">
+                        <img src="img/t3oliv.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">354 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Aveiro - Ílhavo</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamento</span>
+                        <div>
+                           <i class="fa fa-home"></i>
+                            <span>250 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="menu4tl">
-            <table class="novis">
-                <th class="novis3" onclick="location.href='t3oliv.html'">
-                    <h3>160 000</h3></th>
-                <th class="novis3" onclick="location.href='t3oliv.html'">
-                    <h3>160 000</h3>
-                </th>
-                <th class="novis3" onclick="location.href='t3oliv.html'">
-                    <h3>160 000</h3></th>
-                <th class="novis3" onclick="location.href='t3oliv.html'">
-                    <h3>160 000</h3>
-                </th>
-                <th class="novis3" onclick="location.href='t3oliv.html'">
-                    <h3>160 000</h3></th>
-                <th class="novis3" onclick="location.href='t3oliv.html'">
-                    <h3>160 000</h3>
-            </table>
         </div>
     </div>
 
+
+
+    <div class="menus">
+        <div class="menu2"> 
+            <span class="titulo">Empreendimentos</span>
+            <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
+            <div class="newsver">
+                <span classe="setas">
+                    <i class="fa fa-arrow-left" onclick="es()"></i>
+                    <i class="fa fa-arrow-right" onclick="dr()"></i>
+                    <input type="hidden" id="jpg1" value="1">
+                    <input type="hidden" id="jpg2" value="4">
+                </span>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <div class="item_slide" id="jpgs1">
+                    <div class="box_img">
+                        <img src="img/emp1.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">1 200 450€</span>
+                    </div>
+                    <div class="local">
+                        <span>Cascais</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamentos</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>400 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>4</span>
+                            <i class="fa fa-bed"></i>
+                            <span>6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="jpgs2">
+                    <div class="box_img">
+                        <img src="img/emp2.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">778 078 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Porto</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Quinta</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>600 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>3</span>
+                            <i class="fa fa-bed"></i>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="jpgs3">
+                    <div class="box_img">
+                        <img src="img/emp3.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">420 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Lisboa</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>325 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="jpgs4">
+                    <div class="box_img">
+                        <img src="img/emp4.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">150 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Viseu</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>250 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>1</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="jpgs5">
+                    <div class="box_img">
+                        <img src="img/emp5.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">81 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Faro</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Apartamento</span>
+                        <div>
+                           <i class="fa fa-home"></i>
+                            <span>85 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>1</span>
+                            <i class="fa fa-bed"></i>
+                            <span>2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

@@ -78,6 +78,83 @@ function Right()
   document.getElementById( "img_last" ).value = last_val;
 }
 
+
+function le()
+{
+  var_one=document.getElementById("img1").value;
+  var_two=document.getElementById("img2").value;
+
+  if(var_one > 1){
+    nm="imagem"+var_two;
+    document.getElementById(nm).style.display="none";
+    var_one--;
+    nm="imagem"+var_one;
+    document.getElementById(nm).style.display="block";
+    var_two--;
+  }
+  document.getElementById("img1").value = var_one;
+  document.getElementById("img2").value = var_two;
+}
+
+function rd(){
+  var_one = document.getElementById("img1").value;
+  var_two = document.getElementById("img2").value;
+
+  if(var_two<5){
+    nm="imagem"+var_one;
+    document.getElementById(nm).style.display="none";
+    var_one++;
+    var_two++;
+    nm="imagem"+var_two;
+    document.getElementById(nm).style.display="block";
+    document.getElementById("img1").value=var_one;
+    document.getElementById("img2").value=var_two;
+  }
+  document.getElementById("img1").value=var_one;
+    document.getElementById("img2").value=var_two;
+}
+
+
+
+
+
+function es()
+{
+  var_one=document.getElementById("jpg1").value;
+  var_two=document.getElementById("jpg2").value;
+
+  if(var_one > 1){
+    nm="jpgs"+var_two;
+    document.getElementById(nm).style.display="none";
+    var_one--;
+    nm="jpgs"+var_one;
+    document.getElementById(nm).style.display="block";
+    var_two--;
+  }
+  document.getElementById("jpg1").value = var_one;
+  document.getElementById("jpg2").value = var_two;
+}
+
+function dr(){
+  var_one = document.getElementById("jpg1").value;
+  var_two = document.getElementById("jpg2").value;
+
+  if(var_two<5){
+    nm="jpgs"+var_one;
+    document.getElementById(nm).style.display="none";
+    var_one++;
+    var_two++;
+    nm="jpgs"+var_two;
+    document.getElementById(nm).style.display="block";
+    document.getElementById("jpg1").value=var_one;
+    document.getElementById("jpg2").value=var_two;
+  }
+  document.getElementById("jpg1").value=var_one;
+    document.getElementById("jpg2").value=var_two;
+}
+
+
+
 //Botoes pesquisas mais comuns
 function myFunction1() {
   document.getElementById("myDropdown3-1").classList.toggle("show");

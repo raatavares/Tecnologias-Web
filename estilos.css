@@ -369,12 +369,13 @@ Imagens Azuis
 
 .menu2{
     display: inline;
+    font-size: 25px;
 }
     
 .titulo{
     color:black;
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight:lighter;
     text-align: left;
     margin: 0;
 }
@@ -493,6 +494,7 @@ Imagens Azuis
                         margin: 0 3px;
                     }
     
+                    
 
 
 
@@ -508,109 +510,10 @@ Imagens Azuis
 
 
 
-
-
-
-
-
-
-
-    .novis{
-        width: 100%;
-        border-spacing:8px 8px
-    }
-    
-    .novis1 {
-        padding: 8px;
-        width: 10%;
-        height: 200px;
-        background-image: url("img/t2av.jpg");
-        border-radius: 10px;
-        padding:8px;
-        background-repeat: no-repeat;  
-        background-size: contain;
-        cursor: pointer;
-    }
            
-    .meenn{
-        padding-left: 12%;
-        padding-right: 12%;
-        width: 76%;
-        padding-top:3% ;
-    }
-    
-    .menu3{
-        display: inline;
-    }
-        
-    .titulo2{color:black;
-        font-size: 35px;
-        font-weight: bold;
-        text-align: left;
-    margin: 0;}
-    
-    .remaxc{font-size: 15px;
-        position: relative;
-        padding-top: 1%;
-        float: right;
-        display: flex;}
-        
-        .novis{
-            width: 100%;
-            border-spacing:8px 8px
-        }
+ 
 
-.novis2 {
-    padding: 8px;
-    width: 10%;
-    height: 200px;
-    background-image: url("img/t3oliv.jpg");
-    border-radius: 10px;
-    padding:8px;
-    background-repeat: no-repeat;  
-    background-size: contain;
-    cursor: pointer;
-}
 
-.mensss{
-    padding-left: 12%;
-    padding-right: 12%;
-    width: 76%;
-    padding-top:3% ;
-}
-
-.menu4{
-    display: inline;
-}
-    
-.titulo3{color:black;
-    font-size: 35px;
-    font-weight: bold;
-    text-align: left;
-margin: 0;}
-
-.emp{font-size: 15px;
-    position: relative;
-    padding-top: 1%;
-    float: right;
-    display: flex;}
-
-    .novis{
-        width: 100%;
-        border-spacing:8px 8px
-    } 
-    
-    .novis3{
-        padding: 8px;
-        width: 10%;
-        height: 200px;
-        background-image: url("img/t4visa.jpg");
-        border-radius: 10px;
-        padding:8px;
-        background-repeat: no-repeat;  
-        background-size: contain;
-        cursor: pointer;
-    }
 
 
 
