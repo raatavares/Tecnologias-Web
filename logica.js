@@ -1,3 +1,29 @@
+//Resolução bug menu
+function checkMediaQuery(){
+  if(window.innerWidth > 1050){
+    document.getElementById("parte2").style.display="block";
+    document.body.style.overflow = "auto";
+  }
+  if(window.innerWidth < 1050){
+    document.getElementById("parte2").style.display="none";
+  }
+}
+
+window.addEventListener('resize', checkMediaQuery);
+
+//botão menu
+function Open(){
+  if(document.getElementById("parte2").style.display == "block"){
+    document.getElementById("parte2").style.display="none";
+    document.body.style.overflow = "auto";
+  }else{
+    document.getElementById("parte2").style.display="block";
+    document.body.style.overflow = "hidden";
+  }
+  document.getElementById("burger").classList.toggle("toggle");
+}
+
+
 
 //Cor botoes comprar-arrendar
 function myFunctionArrendar() {
@@ -15,6 +41,41 @@ var mybutton = document.getElementById("TopBtn");
 function topFunction() {
   document.body.scrollTop = 990;
   document.documentElement.scrollTop = 990;
+}
+
+//Botoes slide img
+function Left()
+{
+  first_val = document.getElementById( "img_first" ).value;
+  last_val = document.getElementById( "img_last" ).value;
+  
+  if(first_val > 1){
+    nome="image"+last_val;
+    document.getElementById(nome).style.display="none";
+    first_val--;
+    nome="image"+first_val;
+    document.getElementById(nome).style.display="block";
+    last_val--;
+  }
+  document.getElementById( "img_first" ).value = first_val;
+  document.getElementById( "img_last" ).value = last_val;
+}
+
+function Right()
+{
+  first_val = document.getElementById( "img_first" ).value;
+  last_val = document.getElementById( "img_last" ).value;
+  
+  if(last_val < 5){
+    nome="image"+first_val;
+    document.getElementById(nome).style.display="none";
+    first_val++;
+    last_val++;
+    nome="image"+last_val;
+    document.getElementById(nome).style.display="block";
+  }
+  document.getElementById( "img_first" ).value = first_val;
+  document.getElementById( "img_last" ).value = last_val;
 }
 
 //Botoes pesquisas mais comuns
@@ -131,9 +192,9 @@ function FunctionCalcFinanciamento() {
   TaxaGlobal2 = (0.5 + Number(Spread2)).toFixed(2);
   TaxaGlobal3 = (0.5 + Number(Spread3)).toFixed(2);
   meses = Number(anos)*12;
-  ValorMensal1 = (Number(emprestimo) + TaxaGlobal1)/meses;
-  ValorMensal2 = (Number(emprestimo) + TaxaGlobal2)/meses;
-  ValorMensal3 = (Number(emprestimo) + TaxaGlobal3)/meses;
+  ValorMensal1 = (Number(emprestimo) + Number(emprestimo) * TaxaGlobal1)/meses;
+  ValorMensal2 = (Number(emprestimo) + Number(emprestimo) * TaxaGlobal2)/meses;
+  ValorMensal3 = (Number(emprestimo) + Number(emprestimo) * TaxaGlobal3)/meses;
   montanteTotal = Number(entrada) + Number(emprestimo);
 
   document.getElementById("prestacoes1").innerHTML = ValorMensal1.toFixed(2)+"€";
@@ -154,7 +215,9 @@ function FunctionCalcFinanciamento() {
 
 
   if(document.getElementById("ResultadoFin").style.display != "contents")
-  document.getElementById("ResultadoFin").style.display = "contents";
+    document.getElementById("ResultadoFin").style.display = "contents";
+  else
+    document.getElementById("ResultadoFin").style.display = "none";
 }
 
 //financiamento -> ver detalhes

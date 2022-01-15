@@ -15,37 +15,46 @@
 
     <nav class="nav-menu">
         <div class="menu1">
-            <img class="imagem_logo" src="img/logo_remax.jpg"/>
-            <ul class="parte1" style="list-style-type:none">
-                <div class="dropdown">
-                    <span>Portugues <i class='fa fa-angle-down'></i></span>
-                    <div class="dropdown-content">
-                    <p>Portugues</p>
-                    <p>Ingles</p>
+            <div id="menu-parte1">
+                <div class="burger" id="burger" onclick="Open()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <img class="imagem_logo" src="img/logo_remax.jpg"/>
+                <ul class="parte1" style="list-style-type:none">
+                    <div class="dropdown">
+                        <span>Portugues <i class='fa fa-angle-down'></i></span>
+                        <div class="dropdown-content">
+                        <p>Portugues</p>
+                        <p>Ingles</p>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div id="menu-parte2">
+                <div id="parte2">
+                    <ul class="parte2">
+                        <li><a href="emp.html">Empreendimentos</a></li>  
+                        <li><a href="collection.html">RE/MAXCollection</a></li>
+                        <li><a href="comprar.html">Comprar</a></li>
+                        <li><a href="verder.html">Vender</a></li>
+                    </ul>
+                    <div class="dropdown2">
+                        <span class="dropspan">Agências <i class='fa fa-angle-down'></i></span>
+                        <div class="dropdown2-content">
+                            <p>Procurar um Agente ou Agência</p>
+                            <p>Seja uma Agente RE/MAX</p>
+                            <p>Franchising</p>
+                            <p>Top Agentes e Agências</p>
+                        </div>
                     </div>
                 </div>
-            </ul>
-            <ul class="parte2">
-                <li><a href="emp.html">Empreendimentos</a></li>  
-                <li><a href="collection.html">RE/MAX Collection</a></li>
-                <li><a href="comprar.html">Comprar</a></li>
-                <li><a href="verder.html">Vender</a></li>
-            </ul>
-                <div class="dropdown2">
-                    <span class="dropspan">Agências <i class='fa fa-angle-down'></i></span>
-                    <div class="dropdown2-content">
-                    <p>Procurar um Agente ou Agência</p>
-                    <p>Seja uma Agente RE/MAX</p>
-                    <p>Franchising</p>
-                    <p>Top Agentes e Agências</p>
-                    </div>
-                  </div>
-            
                 <div class="opcao_entrar">
                     <i class="fa fa-user-circle-o" style="font-size:24px; margin-top: 17px; margin-bottom: 16px; margin-right: 10px;"></i>
                     <a href="entrar.html">Entrar</a>
-                </div>
-            
+                </div>  
+            </div>    
         </div>
     </nav>
     <div class="imagem_fundo" >
@@ -69,51 +78,155 @@
     <img  src="img/procura_casa.jpg" id="procura_img" />
     <img  src="img/comprar_vender.jpg" id="comprar_vender_img" />
 
-<div class="menus">
-    <div class="menu2"> 
-        <span class="titulo">Novidades</span>
-        <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
-        <div class="newsver">
-            <span class="setas">
-                <i class="fa fa-arrow-left"></i>
-                <i class="fa fa-arrow-right"></i>
-            </span>
-            
+    <div class="menus">
+        <div class="menu2"> 
+            <span class="titulo">Novidades</span>
+            <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
+            <div class="newsver">
+                <span classe="setas">
+                    <i class="fa fa-arrow-left" onclick="Left()"></i>
+                    <i class="fa fa-arrow-right" onclick="Right()"></i>
+                    <input type="hidden" id="img_first" value="1">
+                    <input type="hidden" id="img_last" value="4">
+                </span>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="content">
+                <div class="item_slide" id="image1">
+                    <div class="box_img">
+                        <img src="img/t3visa.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">550 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Lisboa - Sintra, Rio de Mouro</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>380 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="image2">
+                    <div class="box_img">
+                        <img src="img/dupvisa.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">550 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Lisboa - Sintra, Rio de Mouro</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>380 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="image3">
+                    <div class="box_img">
+                        <img src="img/t3visa.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">550 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Lisboa - Sintra, Rio de Mouro</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>380 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="image4">
+                    <div class="box_img">
+                        <img src="img/dupvisa.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">550 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Lisboa - Sintra, Rio de Mouro</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>380 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_slide" id="image5">
+                    <div class="box_img">
+                        <img src="img/t3visa.jpg">
+                        <span class="fav"><i class="fa fa-heart"></i></span>
+                        <span class="preco">550 000 €</span>
+                    </div>
+                    <div class="local">
+                        <span>Lisboa - Sintra, Rio de Mouro</span>
+                        <div class="agent_img">
+                            <img src="img/agent.png">
+                        </div>
+                    </div>
+                    <div class="detalhes">
+                        <span>Moradia</span>
+                        <div>
+                           <i class="fa fa-home"></i>
+                            <span>380 m<sup>2</sup></span>
+                            <i class="fa fa-bath"></i>
+                            <span>2</span>
+                            <i class="fa fa-bed"></i>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="novi">
-        <table class="novis" style="display: block;">
-            <tr>
-                <th class="novis1" onclick="location.href='t3visa.html'">
-                    <h3>380 000</h3></th>
-                <th class="novis1" onclick="location.href='t3visa.html'">
-                    <h3>380 000</h3>
-                </th>
-                <th class="novis1" onclick="location.href='t3visa.html'">
-                    <h3>380 000</h3></th>
-                <th class="novis1" onclick="location.href='t3visa.html'">
-                    <h3>380 000</h3>
-                </th>
-                <th class="novis1" onclick="location.href='t3visa.html'">
-                    <h3>380 000</h3></th>
-                <th class="novis1" onclick="location.href='t3visa.html'">
-                    <h3>380 000</h3>
-                </th>
-            </tr>
-        </table>
-    </div>
-</div>
-<div class="meenn">
-    <div class="menu3"> 
-        <span class="titulo2">RE/MAX Collection</span>
-        <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
-        <div class="remaxc">
-        <span class="setas">
-            <i class="fa fa-arrow-left"></i>
-            <i class="fa fa-arrow-right"></i>
-        </span>
-        </div>
+    <div class="meenn">
+        <div class="menu3"> 
+            <span class="titulo2">RE/MAX Collection</span>
+            <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
+            <div class="remaxc">
+            <span classe="setas">
+                <i class="fa fa-arrow-left"></i>
+                <i class="fa fa-arrow-right"></i>
+            </span>
+            </div>
         </div>
         
         <div class="menu3l">
@@ -135,37 +248,36 @@
             </table>
         </div>
     </div>
-<div class="mensss">
-    <div class="menu4"> 
-        <span class="titulo3">Empreendimentos</span>
-        <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
-        <div class="emp">
-        <span class="setas">
-            <i class="fa fa-arrow-left"></i>
-            <i class="fa fa-arrow-right"></i>
-        </span>
+    <div classe="mensss">
+        <div class="menu4"> 
+            <span class="titulo3">Empreendimentos</span>
+            <a href="vertodos.html" style="text-decoration: none;">Ver Todos</a>
+            <div class="emp">
+            <span classe="setas">
+                <i class="fa fa-arrow-left"></i>
+                <i class="fa fa-arrow-right"></i>
+            </span>
+            </div>
         </div>
-        
+        <div class="menu4tl">
+            <table class="novis">
+                <th class="novis3" onclick="location.href='t3oliv.html'">
+                    <h3>160 000</h3></th>
+                <th class="novis3" onclick="location.href='t3oliv.html'">
+                    <h3>160 000</h3>
+                </th>
+                <th class="novis3" onclick="location.href='t3oliv.html'">
+                    <h3>160 000</h3></th>
+                <th class="novis3" onclick="location.href='t3oliv.html'">
+                    <h3>160 000</h3>
+                </th>
+                <th class="novis3" onclick="location.href='t3oliv.html'">
+                    <h3>160 000</h3></th>
+                <th class="novis3" onclick="location.href='t3oliv.html'">
+                    <h3>160 000</h3>
+            </table>
+        </div>
     </div>
-<div class="menu4tl">
-    <table class="novis" style="display: block;">
-        <th class="novis3" onclick="location.href='t3oliv.html'">
-            <h3>160 000</h3></th>
-        <th class="novis3" onclick="location.href='t3oliv.html'">
-            <h3>160 000</h3>
-        </th>
-        <th class="novis3" onclick="location.href='t3oliv.html'">
-            <h3>160 000</h3></th>
-        <th class="novis3" onclick="location.href='t3oliv.html'">
-            <h3>160 000</h3>
-        </th>
-        <th class="novis3" onclick="location.href='t3oliv.html'">
-            <h3>160 000</h3></th>
-        <th class="novis3" onclick="location.href='t3oliv.html'">
-            <h3>160 000</h3>
-    </table>
-</div>
-</div>
 
 
 
@@ -511,7 +623,7 @@
                 <table>
                 <tr class="column" id="column-fin1">
                     <div class="box-banco">
-                        <img src="img/banco_CA.jpg" class="img_ca"/>
+                        <img src="img/banco_CA.jpg" class="img_banco"/>
                         <div class="box-banco-text">
                             <a id="credito">Crédito Agrícula Crédito habitação Taxa variável</a><br>
                             <span id="var">variável</span><br><br><br>
@@ -544,7 +656,7 @@
                 </tr>
                 <tr class="column" id="column-fin1">
                     <div class="box-banco">
-                        <img src="img/banco_milennium.png" class="img_mill"/>
+                        <img src="img/banco_milennium.png" class="img_banco"/>
                         <div class="box-banco-text">
                             <a  id="credito">Millennium Crédito habitação Taxa variável</a><br>
                             <span id="var">variável</span><br><br><br>
@@ -577,7 +689,7 @@
                 </tr>
                 <tr class="column" id="column-fin1">
                     <div class="box-banco">
-                        <img src="img/banco_CGD.png" class="img_cgd"/>
+                        <img src="img/banco_CGD.png" class="img_banco"/>
                         <div class="box-banco-text">
                             <a id="credito">Caixa Geral de Depósito Crédito habitação Taxa variável</a><br>
                             <span id="var">variável</span><br><br><br>
