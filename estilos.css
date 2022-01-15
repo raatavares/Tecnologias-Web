@@ -364,33 +364,44 @@ Imagens Azuis
     padding-left: 12%;
     padding-right: 12%;
     width: 76%;
-    padding-top:3% ;
+    padding-top: 64px;
 }
 
 .menu2{
     display: inline;
     font-size: 25px;
 }
+
+    .menu2 a{
+        text-decoration: none;
+        margin-left: 32px;
+        margin-bottom: 1.5px;
+        color: #003aa8;
+        font-size: 15px;
+        font-weight: 700;
+    }
     
-.titulo{
+.titulo1{
     color:black;
-    font-size: 25px;
-    font-weight:lighter;
     text-align: left;
     margin: 0;
+    font-size: 24px;
+    font-weight: lighter;
+    margin-left: 10px;
 }
 
 .newsver{font-size: 15px;
     position: relative;
     padding-top: 1%;
     float: right;
-    display: flex;}
-
-
+    display: flex;
+    cursor: pointer;
+}
 
     .slide {
         display: flex;
-        margin: 30px 0;
+        margin-top: 0;
+        margin-bottom: 0;
         overflow: hidden;
     }
     
@@ -494,29 +505,6 @@ Imagens Azuis
                         margin: 0 3px;
                     }
     
-                    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           
- 
-
-
-
-
-
 
 /*************************
 Concelhos mais procurados
@@ -1149,7 +1137,7 @@ Site responsive
     #parte2{
         position:absolute;
         left: 0px;
-        height: 20%;
+        height: 100%;
         width: 320px;
         top: 70px;
         background-color:white;
@@ -1209,7 +1197,7 @@ Site responsive
 
 
     /*******************
-    Novidades - Casas
+    Responsive Novidades - Casas
     *******************/
     .menus{
         padding-left: 2%;
@@ -1218,12 +1206,22 @@ Site responsive
         padding-top:3% ;
     }
 
+    .menu2 a{
+        margin-left: 20px;
+}
+
+    .item_slide {
+        margin: 0 5px;
+    }
+
     .local{
         display: block;
+        padding: 0;
     }
 
     .detalhes {
         display: block;
+        padding: 0;
     }
 
     /*************************
